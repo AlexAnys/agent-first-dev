@@ -40,7 +40,7 @@ conda activate cs146s
 pre-commit install
 ```
 
-3) Run the app (from `week4/` directory)
+3) Run the app (from `week5/` directory)
 
 ```bash
 make run
@@ -52,7 +52,7 @@ make run
 
 
 ### Testing
-Run the tests (from `week4/` directory)
+Run the tests (from `week5/` directory)
 ```bash
 make test
 ```
