@@ -3,6 +3,12 @@
 ## Assignment Overview
 In this assignment, you will practice agent-driven development and AI-assisted code review on a more advanced codebase. You will implement the tasks in `week7/docs/TASKS.md`, validate your work with tests and manual review, and compare your own review notes with AI-generated code reviews.
 
+## Get Started with Graphite
+1. Sign up for Graphite: https://app.graphite.dev/signup
+2. Upon sign up, you can claim your 30-day free trial.
+3. After the 30 days, you can use code **CS146S** to claim free Graphite under their education program. 
+
+
 ## What to do
 Implement the tasks from `week7/docs/TASKS.md` using an AI coding tool of your choice (e.g. Cursor, Copilot, Claude, etc.).
 
