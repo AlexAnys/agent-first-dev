@@ -8,7 +8,7 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = "You're an expert solving math problems using chain of thought reasoning. Given a problem, you will reason throughout the steps, and give the final answer on the last line as 'Answer: <number>'."
 
 
 USER_PROMPT = """
