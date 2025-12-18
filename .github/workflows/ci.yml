@@ -1,0 +1,57 @@
+name: CI - Run Changed Assignments
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+
+jobs:
+  run-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Needed for changed-files
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          version: "latest"
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v44
+        with:
+          files: |
+            **/*.py
+
+      - name: Run changed Python scripts
+        if: steps.changed-files.outputs.any_changed == 'true'
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          PYTHONPATH: ci:.
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "------------------------------------------------"
+            echo "🚀 Running: $file"
+            
+            # Run the script and capture output
+            # We use 'tee' to show output and capture it
+            OUTPUT=$(uv run python "$file" 2>&1 | tee /dev/stderr)
+            
+            # Check for SUCCESS
+            if echo "$OUTPUT" | grep -q "SUCCESS"; then
+              echo "✅ $file PASSED with SUCCESS"
+            else
+              echo "❌ $file FAILED: 'SUCCESS' not found in output"
+              exit 1
+            fi
+          done
