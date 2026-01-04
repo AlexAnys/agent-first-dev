@@ -1,6 +1,7 @@
 import os
 import re
 from typing import Callable, List, Tuple
+
 from dotenv import load_dotenv
 from ollama import chat
 
@@ -15,16 +16,20 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = ""
+YOUR_REFLEXION_PROMPT = """You are a coding assistant. Analyze the test failures and fix the code
+
+The <prev_code> block shows the current implementation. The <failures> block shows which tests failed and why.
+Fix the code to handle ALL the failure cases. Output ONLY a single fenced Python code block that defines is_valid_password(password: str) -> bool.
+"""
 
 
 # Ground-truth test suite used to evaluate generated code
 SPECIALS = set("!@#$%^&*()-_")
 TEST_CASES: List[Tuple[str, bool]] = [
-    ("Password1!", True),       # valid
-    ("password1!", False),      # missing uppercase
-    ("Password!", False),       # missing digit
-    ("Password1", False),       # missing special
+    ("Password1!", True),  # valid
+    ("password1!", False),  # missing uppercase
+    ("Password!", False),  # missing digit
+    ("Password1", False),  # missing special
 ]
 
 
@@ -96,7 +101,16 @@ def your_build_reflexion_context(prev_code: str, failures: List[str]) -> str:
 
     Return a string that will be sent as the user content alongside the reflexion system prompt.
     """
-    return ""
+    failures_str = "\n".join(f"- {f}" for f in failures)
+    return f"""<prev_code>
+{prev_code}
+</prev_code>
+
+<failures>
+{failures_str}
+</failures>
+
+Analyze the failures above and fix the code to pass all tests. Pay special attention to the 'Failing checks' hints."""
 
 
 def apply_reflexion(

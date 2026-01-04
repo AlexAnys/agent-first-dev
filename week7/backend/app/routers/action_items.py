@@ -1,6 +1,6 @@
 from typing import Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import asc, desc, select
 from sqlalchemy.orm import Session
 
@@ -15,6 +15,7 @@ router = APIRouter(prefix="/action-items", tags=["action_items"])
 def list_items(
     db: Session = Depends(get_db),
     completed: Optional[bool] = None,
+    note_id: Optional[int] = None,
     skip: int = 0,
     limit: int = Query(50, le=200),
     sort: str = Query("-created_at"),
@@ -22,6 +23,8 @@ def list_items(
     stmt = select(ActionItem)
     if completed is not None:
         stmt = stmt.where(ActionItem.completed.is_(completed))
+    if note_id is not None:
+        stmt = stmt.where(ActionItem.note_id == note_id)
 
     sort_field = sort.lstrip("-")
     order_fn = desc if sort.startswith("-") else asc
@@ -36,7 +39,11 @@ def list_items(
 
 @router.post("/", response_model=ActionItemRead, status_code=201)
 def create_item(payload: ActionItemCreate, db: Session = Depends(get_db)) -> ActionItemRead:
-    item = ActionItem(description=payload.description, completed=False)
+    item = ActionItem(
+        description=payload.description,
+        completed=False,
+        note_id=payload.note_id
+    )
     db.add(item)
     db.flush()
     db.refresh(item)
@@ -69,4 +76,20 @@ def patch_item(item_id: int, payload: ActionItemPatch, db: Session = Depends(get
     db.refresh(item)
     return ActionItemRead.model_validate(item)
 
+
+@router.get("/{item_id}", response_model=ActionItemRead)
+def get_item(item_id: int, db: Session = Depends(get_db)) -> ActionItemRead:
+    item = db.get(ActionItem, item_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="Action item not found")
+    return ActionItemRead.model_validate(item)
+
+
+@router.delete("/{item_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_item(item_id: int, db: Session = Depends(get_db)) -> None:
+    item = db.get(ActionItem, item_id)
+    if not item:
+        raise HTTPException(status_code=404, detail="Action item not found")
+    db.delete(item)
+    db.flush()
 
