@@ -1,5 +1,5 @@
-import os
 import re
+
 from dotenv import load_dotenv
 from ollama import chat
 
@@ -8,7 +8,7 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = "You are a mathematical expert. Solve the user's problem using a detailed chain-of-thought process."
 
 
 USER_PROMPT = """
@@ -68,5 +68,3 @@ def test_your_prompt(system_prompt: str) -> bool:
 
 if __name__ == "__main__":
     test_your_prompt(YOUR_SYSTEM_PROMPT)
-
-

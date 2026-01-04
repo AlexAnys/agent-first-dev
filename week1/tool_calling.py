@@ -1,7 +1,7 @@
 import ast
 import json
 import os
-from typing import Any, Dict, List, Optional, Tuple, Callable
+from typing import Any, Callable, Dict, List, Optional, Tuple
 
 from dotenv import load_dotenv
 from ollama import chat
@@ -60,6 +60,7 @@ def add(a: int, b: int) -> int:
 def greet(name: str) -> str:
     return f"Hello, {name}!"
 
+
 # Tool registry for dynamic execution by name
 TOOL_REGISTRY: Dict[str, Callable[..., str]] = {
     "output_every_func_return_type": output_every_func_return_type,
@@ -70,7 +71,16 @@ TOOL_REGISTRY: Dict[str, Callable[..., str]] = {
 # ==========================
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = ("When you're calling a tool, always return ONLY json with format like below:"
+                      """```json
+{
+    "tool": "tool_name",
+    "args": {
+        "arg1": "arg1_value",
+        "arg2": "arg2_value"
+    }
+}```"""
+                      f"current available tools:{TOOL_REGISTRY}")
 
 
 def resolve_path(p: str) -> str:
