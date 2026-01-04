@@ -39,3 +39,35 @@ def client() -> Generator[TestClient, None, None]:
     os.unlink(db_path)
 
 
+def create_test_notes(client: TestClient, count: int) -> list[dict]:
+    """Helper function to create multiple test notes."""
+    notes = []
+    for i in range(count):
+        payload = {
+            "title": f"Note {i+1:03d}",
+            "content": f"Content for note {i+1}"
+        }
+        response = client.post("/notes/", json=payload)
+        assert response.status_code == 201
+        notes.append(response.json())
+    return notes
+
+
+def create_test_action_items(client: TestClient, count: int, completed: bool = False) -> list[dict]:
+    """Helper function to create multiple test action items."""
+    items = []
+    for i in range(count):
+        payload = {"description": f"Task {i+1:03d}"}
+        response = client.post("/action-items/", json=payload)
+        assert response.status_code == 201
+        item = response.json()
+
+        if completed:
+            complete_response = client.put(f"/action-items/{item['id']}/complete")
+            assert complete_response.status_code == 200
+            item = complete_response.json()
+
+        items.append(item)
+    return items
+
+

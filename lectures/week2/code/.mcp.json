@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "demo-server": {
+      "type": "stdio",
+      "command": "/opt/miniconda3/bin/uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/xuyin/Documents/Repository/modern-software-dev-assignments/lectures/week2/code",
+        "python",
+        "mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[project]
+name = "demo-mcp-server"
+version = "1.0.0"
+description = "A demo MCP server built with FastMCP 2.0"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+demo-mcp-server = "mcp_server:mcp.run"
+
+[tool.hatch.build.targets.wheel]
+include = [
+    "/mcp_server.py",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
