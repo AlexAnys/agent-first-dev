@@ -5,6 +5,18 @@ You will practice multiple prompting techniques by crafting prompts to complete 
 ## Installation
 Make sure you have first done the installation described in the top-level `README.md`. 
 
+## ENV creation
+create .env in week1 folder. add below lines
+``` bash
+OLLAMA_HOST=http://10.23.38.9:11434
+```
+or add below into launch.json
+``` json
+"env": {
+                "OLLAMA_HOST": "http://10.23.38.9:11434"
+            }
+```
+
 ## Ollama installation
 We will be using a tool to run different state-of-the-art LLMs locally on your machine called [Ollama](https://ollama.com/). Use one of the following methods:
 
@@ -33,6 +45,38 @@ ollama run mistral-nemo:12b
 ollama run llama3.1:8b
 ```
 
+non-interactive mode:
+```
+ollama pull llama3.1:8b
+ollama pull mistral-nemo:12b
+
+OLLAMA_HOST=0.0.0.0 ollama serve
+OLLAMA_HOST=0.0.0.0 nohup ollama serve > ollama.log 2>&1 &
+```
+
+### Running with Remote Ollama
+If your Ollama server is running on a remote machine (e.g., a Linux server with GPUs), follow these steps:
+
+1. **Configure Remote Server:**
+   Ensure Ollama is listening on all interfaces. By default, it only listens on `127.0.0.1`.
+   - **Directly:** Set the environment variable: `export OLLAMA_HOST=0.0.0.0` before running `ollama serve`.
+   - **Systemd (Linux service):**
+     1. Run `sudo systemctl edit ollama.service`.
+     2. Add the following lines:
+        ```ini
+        [Service]
+        Environment="OLLAMA_HOST=0.0.0.0"
+        ```
+     3. Restart the service: `sudo systemctl daemon-reload && sudo systemctl restart ollama`.
+   - **Firewall:** Ensure port `11434` is open on the remote machine.
+   - to test connection: `curl -v http://10.23.38.9:11434/api/tags`
+
+2. **Run Local Scripts:**
+   Pass the `OLLAMA_HOST` environment variable pointing to your remote server when running your scripts:
+   ```bash
+   OLLAMA_HOST=http://<REMOTE_IP>:11434 uv run week1/chain_of_thought.py
+   OLLAMA_HOST=http://10.23.38.9:11434 uv run week1/chain_of_thought.py
+   ```
 ## Techniques and source files
 - K-shot prompting — `week1/k_shot_prompting.py`
 - Chain-of-thought — `week1/chain_of_thought.py`

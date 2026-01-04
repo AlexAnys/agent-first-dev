@@ -1,3 +1,24 @@
+[project]
+name = "modern-software-dev-assignments"
+version = "0.1.0"
+description = "Course assignments with FastAPI + SQLite starter and tooling"
+readme = "README.md"
+authors = [{name = "Course", email = "course@example.com"}]
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.23.0",
+    "sqlalchemy>=2.0.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "openai>=1.0.0",
+    "ollama>=0.5.3",
+    "dotenv>=0.9.9",
+    "load-dotenv>=0.1.0",
+    "fastmcp>=2.14.1",
+    "poetry>=2.2.1",
+]
+
 [tool.poetry]
 name = "modern-software-dev-assignments"
 version = "0.1.0"
@@ -24,9 +45,12 @@ black = ">=24.1.0"
 ruff = ">=0.4.0"
 pre-commit = ">=3.6.0"
 
+[tool.uv]
+package = false
+
 [build-system]
-requires = ["poetry-core>=1.7.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.black]
 line-length = 100
