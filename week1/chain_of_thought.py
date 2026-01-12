@@ -8,7 +8,12 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """You are the master of Mathematics. You are able to solve any problem in Mathematics.
+Follow these steps to solve the problem:
+1. Find the property of the modulo operation.
+2. Reduce the problem into small problem.
+3. Calculate the final result easily.
+"""
 
 
 USER_PROMPT = """

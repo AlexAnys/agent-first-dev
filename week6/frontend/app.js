@@ -11,7 +11,11 @@ async function loadNotes(params = {}) {
   const notes = await fetchJSON('/notes/?' + query.toString());
   for (const n of notes) {
     const li = document.createElement('li');
-    li.innerHTML = `<strong>${n.title}</strong>: ${n.content}`;
+    // XSS 방지: innerHTML 대신 안전한 DOM API 사용
+    const strong = document.createElement('strong');
+    strong.textContent = n.title;
+    li.appendChild(strong);
+    li.appendChild(document.createTextNode(': ' + n.content));
     list.appendChild(li);
   }
 }

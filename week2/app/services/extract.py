@@ -1,14 +1,14 @@
 from __future__ import annotations
 
-import os
 import re
-from typing import List
 import json
-from typing import Any
-from ollama import chat
-from dotenv import load_dotenv
+from typing import List
 
-load_dotenv()
+from ollama import chat
+
+from ..config import settings
+from ..schemas import LLMActionItem, LLMActionItemList
+
 
 BULLET_PREFIX_PATTERN = re.compile(r"^\s*([-*•]|\d+\.)\s+")
 KEYWORD_PREFIXES = (
@@ -32,8 +32,10 @@ def _is_action_line(line: str) -> bool:
 
 
 def extract_action_items(text: str) -> List[str]:
+    """Extract action items from text using rule-based approach."""
     lines = text.splitlines()
     extracted: List[str] = []
+    
     for raw_line in lines:
         line = raw_line.strip()
         if not line:
@@ -41,11 +43,11 @@ def extract_action_items(text: str) -> List[str]:
         if _is_action_line(line):
             cleaned = BULLET_PREFIX_PATTERN.sub("", line)
             cleaned = cleaned.strip()
-            # Trim common checkbox markers
             cleaned = cleaned.removeprefix("[ ]").strip()
             cleaned = cleaned.removeprefix("[todo]").strip()
             extracted.append(cleaned)
-    # Fallback: if nothing matched, heuristically split into sentences and pick imperative-like ones
+    
+    # Fallback: if nothing matched, heuristically split into sentences
     if not extracted:
         sentences = re.split(r"(?<=[.!?])\s+", text.strip())
         for sentence in sentences:
@@ -54,6 +56,7 @@ def extract_action_items(text: str) -> List[str]:
                 continue
             if _looks_imperative(s):
                 extracted.append(s)
+    
     # Deduplicate while preserving order
     seen: set[str] = set()
     unique: List[str] = []
@@ -63,6 +66,7 @@ def extract_action_items(text: str) -> List[str]:
             continue
         seen.add(lowered)
         unique.append(item)
+    
     return unique
 
 
@@ -71,19 +75,42 @@ def _looks_imperative(sentence: str) -> bool:
     if not words:
         return False
     first = words[0]
-    # Crude heuristic: treat these as imperative starters
     imperative_starters = {
-        "add",
-        "create",
-        "implement",
-        "fix",
-        "update",
-        "write",
-        "check",
-        "verify",
-        "refactor",
-        "document",
-        "design",
-        "investigate",
+        "add", "create", "implement", "fix", "update",
+        "write", "check", "verify", "refactor", "document",
+        "design", "investigate",
     }
     return first.lower() in imperative_starters
+
+
+def extract_action_items_llm(text: str) -> List[str]:
+    """Extract action items from text using LLM."""
+    try:
+        response = chat(
+            model=settings.LLM_MODEL,
+            messages=[
+                {
+                    "role": "system",
+                    "content": """You are an assistant that extracts action items from text.
+Extract all action items, tasks, or to-dos from the given text.
+Return them as a JSON object with an "items" array containing objects with "action" field.
+Example: {"items": [{"action": "Review the document"}, {"action": "Send email to team"}]}"""
+                },
+                {
+                    "role": "user",
+                    "content": f"Extract action items from this text:\n\n{text}"
+                }
+            ],
+            format="json",
+            options={"temperature": settings.LLM_TEMPERATURE}
+        )
+        
+        result = json.loads(response.message.content)
+        action_list = LLMActionItemList(**result)
+        
+        return [item.action for item in action_list.items]
+    
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to parse LLM response as JSON: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"LLM extraction failed: {e}") from e

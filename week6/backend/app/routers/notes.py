@@ -1,7 +1,7 @@
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
-from sqlalchemy import asc, desc, select, text
+from sqlalchemy import asc, desc, select
 from sqlalchemy.orm import Session
 
 from ..db import get_db
@@ -68,28 +68,16 @@ def get_note(note_id: int, db: Session = Depends(get_db)) -> NoteRead:
 
 @router.get("/unsafe-search", response_model=list[NoteRead])
 def unsafe_search(q: str, db: Session = Depends(get_db)) -> list[NoteRead]:
-    sql = text(
-        f"""
-        SELECT id, title, content, created_at, updated_at
-        FROM notes
-        WHERE title LIKE '%{q}%' OR content LIKE '%{q}%'
-        ORDER BY created_at DESC
-        LIMIT 50
-        """
-    )
-    rows = db.execute(sql).all()
-    results: list[NoteRead] = []
-    for r in rows:
-        results.append(
-            NoteRead(
-                id=r.id,
-                title=r.title,
-                content=r.content,
-                created_at=r.created_at,
-                updated_at=r.updated_at,
-            )
-        )
-    return results
+    """
+    Search notes by title or content (SQL injection safe version).
+    Uses SQLAlchemy ORM to prevent SQL injection attacks.
+    """
+    stmt = select(Note).where(
+        (Note.title.ilike(f"%{q}%")) | (Note.content.ilike(f"%{q}%"))
+    ).order_by(desc(Note.created_at)).limit(50)
+    
+    rows = db.execute(stmt).scalars().all()
+    return [NoteRead.model_validate(row) for row in rows]
 
 
 @router.get("/debug/hash-md5")
@@ -101,25 +89,61 @@ def debug_hash_md5(q: str) -> dict[str, str]:
 
 @router.get("/debug/eval")
 def debug_eval(expr: str) -> dict[str, str]:
-    result = str(eval(expr))  # noqa: S307
-    return {"result": result}
+    """
+    SECURITY: This endpoint has been disabled to prevent code injection attacks.
+    Using eval() allows arbitrary code execution which is extremely dangerous.
+    """
+    raise HTTPException(
+        status_code=403,
+        detail="This debug endpoint has been disabled for security reasons. Code evaluation is not allowed."
+    )
 
 
 @router.get("/debug/run")
 def debug_run(cmd: str) -> dict[str, str]:
-    import subprocess
-
-    completed = subprocess.run(cmd, shell=True, capture_output=True, text=True)  # noqa: S602,S603
-    return {"returncode": str(completed.returncode), "stdout": completed.stdout, "stderr": completed.stderr}
+    """
+    SECURITY: This endpoint has been disabled to prevent command injection attacks.
+    Using subprocess with shell=True allows arbitrary command execution.
+    If debug functionality is needed, use a whitelist of allowed commands.
+    """
+    raise HTTPException(
+        status_code=403,
+        detail="This debug endpoint has been disabled for security reasons. Command execution is not allowed."
+    )
 
 
 @router.get("/debug/fetch")
 def debug_fetch(url: str) -> dict[str, str]:
+    """
+    SECURITY: This endpoint has been disabled to prevent SSRF attacks.
+    urllib supports 'file://' scheme which can be used to read arbitrary files.
+    If URL fetching is needed, validate and whitelist allowed URLs.
+    """
+    # URL 검증: file:// 스킴 차단 및 허용된 도메인만 허용
+    if url.startswith("file://"):
+        raise HTTPException(
+            status_code=400,
+            detail="file:// scheme is not allowed for security reasons."
+        )
+    
+    # 허용된 도메인만 허용 (예: localhost만)
+    from urllib.parse import urlparse
+    parsed = urlparse(url)
+    allowed_hosts = ["localhost", "127.0.0.1"]
+    
+    if parsed.hostname not in allowed_hosts:
+        raise HTTPException(
+            status_code=403,
+            detail=f"Only requests to {', '.join(allowed_hosts)} are allowed."
+        )
+    
     from urllib.request import urlopen
-
-    with urlopen(url) as res:  # noqa: S310
-        body = res.read(1024).decode(errors="ignore")
-    return {"snippet": body}
+    try:
+        with urlopen(url, timeout=5) as res:  # timeout 추가
+            body = res.read(1024).decode(errors="ignore")
+        return {"snippet": body}
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Failed to fetch URL: {str(e)}")
 
 
 @router.get("/debug/read")

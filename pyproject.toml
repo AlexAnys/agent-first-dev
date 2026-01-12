@@ -16,6 +16,8 @@ pydantic = ">=2.0.0"
 python-dotenv = ">=1.0.0"
 openai = ">=1.0.0"
 ollama = "^0.5.3"
+mcp = {extras = ["cli"], version = "^1.25.0"}
+httpx = "^0.28.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.0.0"
@@ -23,6 +25,7 @@ httpx = ">=0.24.0"
 black = ">=24.1.0"
 ruff = ">=0.4.0"
 pre-commit = ">=3.6.0"
+pytest-httpx = "^0.36.0"
 
 [build-system]
 requires = ["poetry-core>=1.7.0"]

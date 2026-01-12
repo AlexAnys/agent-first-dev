@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Software Dev Starter</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Modern Software Dev Starter (Week 6)</h1>
+
+      <section>
+        <h2>Notes</h2>
+        <form id="note-form">
+          <input id="note-title" placeholder="Title" required />
+          <textarea id="note-content" placeholder="Content" required></textarea>
+          <select id="note-category" style="padding:.5rem;border:1px solid #ccc;border-radius:4px;">
+            <option value="">No Category</option>
+          </select>
+          <div id="note-tags-container" style="margin:.5rem 0;">
+            <label style="font-size:.9em;color:#666;">Tags:</label>
+            <div id="note-tags-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.25rem;"></div>
+          </div>
+          <button type="submit">Add</button>
+        </form>
+        <div style="margin:.25rem 0;">
+          <input id="note-search" placeholder="Search" />
+          <button id="note-search-btn">Search</button>
+          <button id="note-filter-clear" style="margin-left:.5rem;">Clear Filters</button>
+        </div>
+        <div style="margin:.5rem 0;">
+          <label>Filter by Category: <select id="filter-category" style="margin-left:.5rem;"><option value="">All</option></select></label>
+          <label style="margin-left:1rem;">Filter by Tag: <select id="filter-tag" style="margin-left:.5rem;"><option value="">All</option></select></label>
+        </div>
+        <ul id="notes"></ul>
+      </section>
+
+      <section>
+        <h2>Action Items</h2>
+        <form id="action-form">
+          <input id="action-desc" placeholder="Description" required />
+          <select id="action-note" style="padding:.5rem;border:1px solid #ccc;border-radius:4px;">
+            <option value="">No Note</option>
+          </select>
+          <button type="submit">Add</button>
+        </form>
+        <div style="margin:.25rem 0;">
+          <label><input type="checkbox" id="filter-completed" /> Show completed only</label>
+        </div>
+        <ul id="actions"></ul>
+      </section>
+
+      <section>
+        <h2>Tags</h2>
+        <form id="tag-form">
+          <input id="tag-name" placeholder="Tag name" required />
+          <input id="tag-color" type="color" value="#FF0000" />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="tags"></ul>
+      </section>
+
+      <section>
+        <h2>Categories</h2>
+        <form id="category-form">
+          <input id="category-name" placeholder="Category name" required />
+          <input id="category-description" placeholder="Description" />
+          <button type="submit">Add</button>
+        </form>
+        <ul id="categories"></ul>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+  </html>
+
+

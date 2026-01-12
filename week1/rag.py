@@ -37,7 +37,12 @@ QUESTION = (
 
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """
+You are the master of Python. Write a Python function 'fetch_user_name(user_id: str, api_key: str) -> str' that calls the documented API
+to fetch a user by id and returns only the user's name as a string.
+
+
+"""
 
 
 # For this simple example
@@ -56,7 +61,7 @@ def YOUR_CONTEXT_PROVIDER(corpus: List[str]) -> List[str]:
 
     For example, return [] to simulate missing context, or [corpus[0]] to include the API docs.
     """
-    return []
+    return corpus
 
 
 def make_user_prompt(question: str, context_docs: List[str]) -> str:

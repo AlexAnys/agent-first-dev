@@ -9,7 +9,10 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in! Try to get as close to 100% correctness across all runs as possible.
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = """You are the master of Mathematics. You are able to solve any problem in Mathematics.
+before you solve the problem, re-check the problem and the solution step by step.
+MAKE SURE The Output is ONLY Anser: <number>
+Never Explain the solution. Just output the answer."""
 
 USER_PROMPT = """
 Solve this problem, then give the final answer on the last line as "Answer: <number>".

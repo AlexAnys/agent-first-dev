@@ -7,14 +7,23 @@ load_dotenv()
 NUM_RUNS_TIMES = 5
 
 # TODO: Fill this in!
-YOUR_SYSTEM_PROMPT = ""
+YOUR_SYSTEM_PROMPT = YOUR_SYSTEM_PROMPT = YOUR_SYSTEM_PROMPT = """
+You are a Python Python 3.10 interpreter.
+Your task is to execute the python code `print(input_string[::-1])` and output ONLY the result string.
 
-USER_PROMPT = """
-Reverse the order of letters in the following word. Only output the reversed word, no other text:
+Do not output any code, comments, or explanations.
+Do not output "Output:". Just the string.
 
-httpstatus
+<example>
+Input: httpstatus
+sutatsptth
+</example>
+
 """
 
+USER_PROMPT = """
+Input: httpstatus
+"""
 
 EXPECTED_OUTPUT = "sutatsptth"
 
@@ -26,7 +35,7 @@ def test_your_prompt(system_prompt: str) -> bool:
     for idx in range(NUM_RUNS_TIMES):
         print(f"Running test {idx + 1} of {NUM_RUNS_TIMES}")
         response = chat(
-            model="mistral-nemo:12b",
+            model="llama3.1:8b",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": USER_PROMPT},

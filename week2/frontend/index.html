@@ -7,12 +7,23 @@
     <style>
       body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; margin: 2rem auto; max-width: 800px; padding: 0 1rem; }
       h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.2rem; margin-top: 2rem; }
       textarea { width: 100%; min-height: 160px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace; }
-      button { padding: 0.5rem 1rem; }
+      button { padding: 0.5rem 1rem; cursor: pointer; }
+      button:disabled { opacity: 0.6; cursor: not-allowed; }
+      .btn-llm { background-color: #4f46e5; color: white; border: none; border-radius: 4px; }
+      .btn-llm:hover:not(:disabled) { background-color: #4338ca; }
+      .btn-notes { background-color: #059669; color: white; border: none; border-radius: 4px; }
+      .btn-notes:hover:not(:disabled) { background-color: #047857; }
       .items { margin-top: 1rem; }
       .item { display: flex; align-items: center; gap: 0.5rem; padding: 0.25rem 0; }
       .muted { color: #6b7280; font-size: 0.875rem; }
-      .row { display: flex; gap: 0.5rem; align-items: center; }
+      .row { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+      .notes-section { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; }
+      .note-item { padding: 0.75rem; margin: 0.5rem 0; background: #f9fafb; border-radius: 4px; border: 1px solid #e5e7eb; }
+      .note-item .note-id { font-weight: bold; color: #4f46e5; }
+      .note-item .note-date { color: #6b7280; font-size: 0.75rem; }
+      .note-item .note-content { margin-top: 0.5rem; white-space: pre-wrap; font-size: 0.875rem; }
     </style>
   </head>
   <body>
@@ -23,34 +34,65 @@
     <textarea id="text" placeholder="Paste notes here...&#10;e.g.&#10;- [ ] Set up database&#10;- Implement extract endpoint"></textarea>
     <div class="row">
       <label class="row"><input id="save_note" type="checkbox" checked /> Save as note</label>
-      <button id="extract">Extract</button>
+      <button id="extract">Extract (Rule-based)</button>
+      <button id="extract-llm" class="btn-llm">Extract (LLM)</button>
     </div>
 
     <div class="items" id="items"></div>
 
+    <div class="notes-section">
+      <div class="row">
+        <h2 style="margin: 0;">Saved Notes</h2>
+        <button id="list-notes" class="btn-notes">List Notes</button>
+      </div>
+      <div id="notes-list"></div>
+    </div>
+
     <script>
       const $ = (sel) => document.querySelector(sel);
       const itemsEl = $('#items');
-      const btn = $('#extract');
-      btn.addEventListener('click', async () => {
+      const notesListEl = $('#notes-list');
+
+      // Extract action items (rule-based)
+      $('#extract').addEventListener('click', () => extractItems('/action-items/extract'));
+
+      // Extract action items (LLM)
+      $('#extract-llm').addEventListener('click', () => extractItems('/action-items/extract-llm'));
+
+      async function extractItems(endpoint) {
         const text = $('#text').value;
         const save = $('#save_note').checked;
+        
+        if (!text.trim()) {
+          itemsEl.innerHTML = '<p class="muted">Please enter some text first.</p>';
+          return;
+        }
+
         itemsEl.textContent = 'Extracting...';
+        
         try {
-          const res = await fetch('/action-items/extract', {
+          const res = await fetch(endpoint, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text, save_note: save }),
           });
-          if (!res.ok) throw new Error('Request failed');
+          
+          if (!res.ok) {
+            const error = await res.json();
+            throw new Error(error.detail || 'Request failed');
+          }
+          
           const data = await res.json();
+          
           if (!data.items || data.items.length === 0) {
             itemsEl.innerHTML = '<p class="muted">No action items found.</p>';
             return;
           }
+          
           itemsEl.innerHTML = data.items.map(it => (
             `<div class="item"><input type="checkbox" data-id="${it.id}" /> <span>${it.text}</span></div>`
           )).join('');
+          
           itemsEl.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             cb.addEventListener('change', async (e) => {
               const id = e.target.getAttribute('data-id');
@@ -63,12 +105,48 @@
           });
         } catch (err) {
           console.error(err);
-          itemsEl.textContent = 'Error extracting items';
+          itemsEl.textContent = `Error: ${err.message}`;
+        }
+      }
+
+      // List all notes
+      $('#list-notes').addEventListener('click', async () => {
+        notesListEl.textContent = 'Loading notes...';
+        
+        try {
+          const res = await fetch('/notes');
+          
+          if (!res.ok) {
+            throw new Error('Failed to fetch notes');
+          }
+          
+          const notes = await res.json();
+          
+          if (notes.length === 0) {
+            notesListEl.innerHTML = '<p class="muted">No notes saved yet.</p>';
+            return;
+          }
+          
+          notesListEl.innerHTML = notes.map(note => `
+            <div class="note-item">
+              <div class="row" style="justify-content: space-between;">
+                <span class="note-id">Note #${note.id}</span>
+                <span class="note-date">${note.created_at}</span>
+              </div>
+              <div class="note-content">${escapeHtml(note.content)}</div>
+            </div>
+          `).join('');
+        } catch (err) {
+          console.error(err);
+          notesListEl.textContent = `Error: ${err.message}`;
         }
       });
 
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
     </script>
   </body>
   </html>
-
-

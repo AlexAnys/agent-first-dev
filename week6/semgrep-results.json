@@ -1,0 +1,3 @@
+semgrep scan: unknown option '--subdir'.
+Usage: semgrep scan [OPTION]… [TARGETS]…
+Try 'semgrep scan --help' for more information.

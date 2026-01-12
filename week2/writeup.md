@@ -22,7 +22,8 @@ For each exercise, please include what prompts you used to generate the answer, 
 ### Exercise 1: Scaffold a New Feature
 Prompt: 
 ```
-TODO
+TODO @week2 
+week2의 extract.py에서 extract_action_items를 참고해서 ollama3.1-8b사용해서 LLM이 액션 아이템을 뽑아주는 함수 구현해줘 Ollama의 json모드를 사용하고 pydantic 사용해서 json list 뽑아야함
 ``` 
 
 Generated Code Snippets:

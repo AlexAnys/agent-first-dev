@@ -15,7 +15,21 @@ Keep the implementation minimal.
 """
 
 # TODO: Fill this in!
-YOUR_REFLEXION_PROMPT = ""
+YOUR_REFLEXION_PROMPT = """You are a coding assistant that fixes code based on test failure feedback.
+
+Your task:
+1. Analyze the provided code and test failures
+2. Identify what's wrong with the current implementation
+3. Generate a CORRECTED version that passes all tests
+
+Requirements:
+- Output ONLY a single fenced Python code block
+- Define the function is_valid_password(password: str) -> bool
+- Fix the specific issues mentioned in the test failures
+- Keep the implementation minimal and correct
+
+No explanations or comments, just the corrected code.
+"""
 
 
 # Ground-truth test suite used to evaluate generated code
@@ -92,11 +106,18 @@ def generate_initial_function(system_prompt: str) -> str:
 
 
 def your_build_reflexion_context(prev_code: str, failures: List[str]) -> str:
-    """TODO: Build the user message for the reflexion step using prev_code and failures.
+    """Build the user message for the reflexion step."""
+    failures_text = "\n".join(f"- {f}" for f in failures)
+    
+    return f"""Previous implementation:
+```python
+{prev_code}
+```
 
-    Return a string that will be sent as the user content alongside the reflexion system prompt.
-    """
-    return ""
+Test failures:
+{failures_text}
+Please provide a corrected implementation that fixes these issues.
+"""
 
 
 def apply_reflexion(
