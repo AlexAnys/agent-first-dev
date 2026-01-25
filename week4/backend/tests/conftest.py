@@ -16,7 +16,10 @@ def client() -> Generator[TestClient, None, None]:
     db_fd, db_path = tempfile.mkstemp()
     os.close(db_fd)
 
-    engine = create_engine(f"sqlite:///{db_path}", connect_args={"check_same_thread": False})
+    engine = create_engine(
+        f"sqlite:///{db_path}",
+        connect_args={"check_same_thread": False},
+    )
     TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
     Base.metadata.create_all(bind=engine)
 
@@ -33,7 +36,11 @@ def client() -> Generator[TestClient, None, None]:
 
     app.dependency_overrides[get_db] = override_get_db
 
-    with TestClient(app) as c:
-        yield c
-
-    os.unlink(db_path)
+    try:
+        with TestClient(app) as c:
+            yield c
+    finally:
+        # Windows: must dispose engine before deleting sqlite file
+        engine.dispose()
+        app.dependency_overrides.pop(get_db, None)
+        os.unlink(db_path)
