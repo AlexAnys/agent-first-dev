@@ -13,10 +13,10 @@ Name: **TODO** \
 SUNet ID: **TODO** \
 Citations: **TODO**
 
-This assignment took me about **TODO** hours to do. 
+This assignment took me about **TODO** hours to do.
 
 
-## App Concept 
+## App Concept
 ```
 TODO: Provide a brief, high-level overview of your app, highlighting its main features. This overview should be the same across all three app versions.
 ```
@@ -37,7 +37,7 @@ REFLECTIONS:
 ===============
 a. Issues encountered per stack and how you resolved them: TODO
 
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
+b. Prompting (e.g. what required additional guidance; what worked poorly/well): TODO
 
 c. Approximate time-to-first-run and time-to-feature metrics: TODO
 ```
@@ -57,7 +57,7 @@ REFLECTIONS:
 ===============
 a. Issues encountered per stack and how you resolved them: TODO
 
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
+b. Prompting (e.g. what required additional guidance; what worked poorly/well): TODO
 
 c. Approximate time-to-first-run and time-to-feature metrics: TODO
 ```
@@ -77,7 +77,7 @@ REFLECTIONS:
 ===============
 a. Issues encountered per stack and how you resolved them: TODO
 
-b. Prompting (e.g. what required additional guidance; what worked poorly/wel): TODO
+b. Prompting (e.g. what required additional guidance; what worked poorly/well): TODO
 
 c. Approximate time-to-first-run and time-to-feature metrics: TODO
 ```
