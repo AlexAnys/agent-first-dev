@@ -9,7 +9,7 @@ Build the same functional web application in 3 distinct technology stacks. At le
 
 You may reuse the app from previous weeks (the "developer control center") or create a new app of your choosing, as long as it meets the [minimum functional scope](#minimum-functional-scope). The app should be end-to-end functional (frontend + backend + persistence where applicable) and demonstrate a coherent feature set.
 
-## Minimum Functional Scope 
+## Minimum Functional Scope
 - User can create, read, update, and delete a primary resource (e.g., notes, tasks, posts).
 - Persistent storage (database or file-based) where appropriate for the stack.
 - Basic validation and error handling.
@@ -38,7 +38,7 @@ Bolt is an AI-assisted development platform that generates websites, web apps, a
 1. Locate the unique Bolt promotion code that we've emailed to you.
 2. Navigate to [bolt.new](bolt.new) and create an account.
 3. In Personal Settings > Subscriptions & Tokens, in the Upgrade to Pro block, click the blue "Upgrade" button.
-3. Select "Add promotion code" and paste your unqiue promotion code into this field.
+3. Select "Add promotion code" and paste your unique promotion code into this field.
 4. You’ll receive 3 months of Bolt Pro for free. A credit card is required to activate the trial. **Remember to cancel before the 3-month period ends to avoid automatic billing if you don’t plan to continue your subscription.**
 
 
@@ -49,7 +49,7 @@ Bolt is an AI-assisted development platform that generates websites, web apps, a
 - Iteratively refine prompts for data models, CRUD endpoints, auth (if used), and frontend components.
 - Keep each version isolated to avoid dependency conflicts.
 - Export or sync generated code and commit it as a standalone project folder for that stack.
- 
+
 ## Deliverables
 1) **THREE** project folders (one per version) within the `week8/` folder, each including:
    - Source code
@@ -69,4 +69,3 @@ Bolt is an AI-assisted development platform that generates websites, web apps, a
    - README.md: prerequisites, installation/set-up instructions, run, and env configuration (5 pts)
    - App functionality (5 pts)
    - Complete version description detailed in `writeup.md` (5 pts)
-

@@ -6,7 +6,7 @@ In this assignment, you will practice agent-driven development and AI-assisted c
 ## Get Started with Graphite
 1. Sign up for Graphite: https://app.graphite.dev/signup
 2. Upon sign up, you can claim your 30-day free trial.
-3. After the 30 days, you can use code **CS146S** to claim free Graphite under their education program. 
+3. After the 30 days, you can use code **CS146S** to claim free Graphite under their education program.
 
 
 ## What to do
@@ -14,7 +14,7 @@ Implement the tasks from `week7/docs/TASKS.md` using an AI coding tool of your c
 
 ### For each task:
    1. Create a separate branch.
-   2. Implement the task with your AI tool using a 1-shot prompt. 
+   2. Implement the task with your AI tool using a 1-shot prompt.
    3. Manually review the changes line-by-line. Fix issues you notice and add explanatory commit messages where helpful. You may also pair with a classmate to review each other’s code instead of reviewing your own changes.
    4. Open a Pull Request (PR) for the task. Ensure your PRs include:
       - Description of the problem and your approach.
@@ -25,7 +25,7 @@ Implement the tasks from `week7/docs/TASKS.md` using an AI coding tool of your c
 
 
 ## Deliverables
-In your `writeup.md`, we are looking for the follwoing:
+In your `writeup.md`, we are looking for the following:
 
 - Four PRs, one per completed task, each with:
   - Clear PR description
@@ -52,4 +52,4 @@ In your `writeup.md`, we are looking for the follwoing:
 ## Submission Instructions
 1. Make sure you have all changes pushed to your remote repository for grading.
 2. Make sure you've added both brentju and febielin as collaborators on your assignment repository.
-2. Submit via Gradescope. 
+2. Submit via Gradescope.
