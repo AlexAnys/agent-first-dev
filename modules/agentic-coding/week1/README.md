@@ -23,8 +23,9 @@
 |------|------|
 | [assignment.md](assignment.md) | 原课程作业（英文） |
 | [assignment-zh.md](assignment-zh.md) | 中文导读与概念解释 |
-| [writeup.md](writeup.md) | 原课程提交模板（英文） |
 | [writeup-zh.md](writeup-zh.md) | 学习笔记模板（中文） |
+
+注意：本周没有原课程的 writeup.md 文件。
 
 ## 跳过指引
 
