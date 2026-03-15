@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [← Week 5: Warp Agentic 开发](../week5/) · [Week 7: AI 代码审查 →](../week7/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 6: 安全扫描（Security Scanning）
 
 使用 Semgrep 扫描代码漏洞，学习 AI 辅助的安全检查流程。
@@ -28,3 +30,7 @@
 ## 跳过指引
 
 不建议跳过。即使走快速路径，也建议至少阅读 assignment-zh.md 了解 AI 生成代码的常见安全问题。
+
+---
+
+[← Week 5: Warp Agentic 开发](../week5/) · [Week 7: AI 代码审查 →](../week7/)
