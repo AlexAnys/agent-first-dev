@@ -89,6 +89,71 @@ assignment.md 中包含 6 个实践任务，每个对应一种提示技术。下
 
 ---
 
+## 环境准备
+
+在开始练习之前，确保完成以下准备工作。
+
+### 1. 安装项目依赖
+
+按照仓库根目录的说明安装 Python 环境和依赖（详见根目录 README）。
+
+### 2. 安装 Ollama
+
+Ollama 是一个在本地运行大语言模型的工具。
+
+- macOS (Homebrew):
+  ```bash
+  brew install --cask ollama
+  ollama serve
+  ```
+- Linux:
+  ```bash
+  curl -fsSL https://ollama.com/install.sh | sh
+  ```
+- Windows: 从 [ollama.com/download](https://ollama.com/download) 下载安装。
+
+验证安装：
+```bash
+ollama -v
+```
+
+### 3. 下载模型
+
+首次使用需要下载模型（只需做一次）：
+```bash
+ollama run mistral-nemo:12b
+ollama run llama3.1:8b
+```
+
+---
+
+## 练习任务
+
+本周有 6 个练习，每个对应一个 Python 文件。你需要在每个文件中找到 `TODO` 标记的位置，设计提示词（Prompt）让模型完成任务。
+
+| 技术 | 文件 | 要做什么 |
+|------|------|----------|
+| 少样本提示 (Few-shot) | `k_shot_prompting.py` | 给模型几个示例，让它学会执行特定任务 |
+| 思维链 (Chain-of-Thought) | `chain_of_thought.py` | 让模型展示推理过程，一步步得出答案 |
+| 工具调用 (Tool Calling) | `tool_calling.py` | 让模型知道有哪些工具可用，并在需要时调用 |
+| 自一致性 (Self-Consistency) | `self_consistency_prompting.py` | 多次采样取最一致的答案 |
+| RAG (检索增强生成) | `rag.py` | 先检索相关信息，再基于信息回答 |
+| 反思 (Reflexion) | `reflexion.py` | 让模型检查并改进自己的输出 |
+
+### 每个任务的步骤
+
+1. 打开对应的 `.py` 文件
+2. 阅读文件顶部的任务说明
+3. 找到所有 `TODO` 标记的位置
+4. 设计你的提示词（这是唯一需要修改的部分——不要修改模型设置）
+5. 运行脚本，观察结果
+6. 反复迭代提示词，直到测试通过
+7. 保存你最终使用的提示词和输出结果
+
+**重要提示**：完成后请仔细检查，确保所有 `TODO` 都已处理。
+
+---
+
 ## 自检清单
 
 - [ ] 理解每种提示技术的原理和适用场景

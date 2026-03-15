@@ -23,8 +23,8 @@
 
 按以下顺序学习本周内容：
 
-1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — 三大核心功能解释、实践建议
-2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+1. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 核心概念 + 环境准备 + 练习任务（完整中文版）
+2. **（可选）参考英文原文** → [assignment.md](assignment.md) — 原课程作业，供对照参考
 3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
 4. **进入下一周** → [Week 5: Warp Agentic 开发](../week5/README.md)
 
