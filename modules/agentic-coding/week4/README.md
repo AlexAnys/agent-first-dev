@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [← Week 3: MCP 服务器](../week3/) · [Week 5: Warp Agentic 开发 →](../week5/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 4: 自主编码代理（Autonomous Coding Agent）
 
 深入使用 Claude Code 的三大核心功能：CLAUDE.md、Slash Commands 和 SubAgents。
@@ -29,3 +31,7 @@
 ## 为什么这周特别重要
 
 Week 4 是从"使用 AI 工具"到"设计 AI 工作流"的转折点。之前的练习是让 AI 帮你完成具体任务，这周开始学习如何搭建一套可复用的 AI 协作体系。
+
+---
+
+[← Week 3: MCP 服务器](../week3/) · [Week 5: Warp Agentic 开发 →](../week5/)

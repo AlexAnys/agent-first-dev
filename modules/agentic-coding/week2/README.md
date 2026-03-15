@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [← Week 1: 提示工程](../week1/) · [Week 3: MCP 服务器 →](../week3/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 2: AI 辅助全栈开发
 
 使用 AI 编码工具（Cursor）从零开始扩展一个完整的 Web 应用。
@@ -29,3 +31,7 @@
 ## 跳过指引
 
 本周内容与 Week 4 紧密衔接。如果你走快速路径，建议至少阅读 assignment-zh.md 中的"应用架构概览"部分，理解前后端概念后再进入 Week 4。
+
+---
+
+[← Week 1: 提示工程](../week1/) · [Week 3: MCP 服务器 →](../week3/)

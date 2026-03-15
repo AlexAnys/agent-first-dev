@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [下一周: AI 辅助全栈开发 →](../week2/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 1: 提示工程（Prompt Engineering）
 
 掌握 6 种核心提示技术，理解如何有效地与大语言模型对话。
@@ -30,3 +32,7 @@
 ## 跳过指引
 
 如果你已经熟悉 Prompt Engineering 的基本概念（Few-shot、CoT 等），可以快速浏览 assignment-zh.md 中的术语说明，然后直接进入 [Week 2](../week2/)。
+
+---
+
+[← 模块首页](../README.md) · [下一周: AI 辅助全栈开发 →](../week2/)

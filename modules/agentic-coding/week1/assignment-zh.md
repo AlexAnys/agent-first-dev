@@ -1,3 +1,5 @@
+> [← 本周导航](README.md) · [模块首页](../README.md) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 1 导读：提示工程（Prompt Engineering）
 
 这周学什么：学习 6 种与 AI 对话的方法，每种方法解决不同类型的问题。
@@ -95,3 +97,7 @@ assignment.md 中包含 6 个实践任务，每个对应一种提示技术。下
 - [ ] 能说出什么时候该用 RAG vs. 直接提示
 - [ ] 理解 Temperature 参数对 AI 输出的影响
 - [ ] 能把"提示工程"的核心思想用一句话说清楚
+
+---
+
+[开始 Week 2 →](../week2/)
