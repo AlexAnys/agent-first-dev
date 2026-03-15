@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 7: AI 代码审查](../week7/) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 7: AI 代码审查](../week7/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 8: 多技术栈应用（Multi-Stack Apps）
 
@@ -18,6 +18,15 @@
 
 8-12 小时（三个版本），6-8 小时（如果有 Web 开发经验）
 
+## 学习顺序
+
+按以下顺序学习本周内容：
+
+1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — 技术栈概念、bolt.new 使用、课程回顾
+2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+4. **完成!** → [返回模块首页](../README.md) · [返回知识库首页](../../../README.md)
+
 ## 文件索引
 
 | 文件 | 说明 |
@@ -33,4 +42,4 @@
 
 ---
 
-[← Week 7: AI 代码审查](../week7/) · [← 模块首页](../README.md)
+[← Week 7: AI 代码审查](../week7/README.md) · [← 模块首页](../README.md)

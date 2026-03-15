@@ -57,6 +57,6 @@ _填写你的学习日期_
 - 如果你要教一个朋友使用 AI 来开发应用，你最想强调哪一点？
 
 ## 下周预告
-[Week 3](../week3/) 将介绍 MCP（Model Context Protocol）——一种让 AI 连接外部服务的标准协议。如果说 Week 2 是 AI 帮你"写代码"，Week 3 就是让 AI "使用工具"。
+[Week 3](../week3/README.md) 将介绍 MCP（Model Context Protocol）——一种让 AI 连接外部服务的标准协议。如果说 Week 2 是 AI 帮你"写代码"，Week 3 就是让 AI "使用工具"。
 
-[开始 Week 3 →](../week3/)
+[开始 Week 3 →](../week3/README.md)

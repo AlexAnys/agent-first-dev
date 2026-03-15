@@ -18,14 +18,14 @@
 
 | 周次 | 主题 | 简介 |
 |------|------|------|
-| [Week 1](week1/) | 提示工程（Prompt Engineering） | 6 种核心提示技术，从零开始学会跟 AI 说话 |
-| [Week 2](week2/) | AI 辅助全栈开发（Full-Stack Development） | 用 AI 构建一个完整的应用，体验端到端的开发流程 |
-| [Week 3](week3/) | MCP 服务器（Model Context Protocol） | 扩展 AI 的能力边界，让它能调用外部工具和数据 |
-| [Week 4](week4/) | 自主编码代理（Autonomous Coding Agent） | Claude Code 深度实践，理解代理式开发的核心理念 |
-| [Week 5](week5/) | Warp 环境下的 Agentic 开发 | 多代理工作流（multi-agent workflow），让多个 AI 协同工作 |
-| [Week 6](week6/) | 安全扫描（Security Scanning） | AI 辅助的代码安全检查，把漏洞扼杀在开发阶段 |
-| [Week 7](week7/) | AI 代码审查（Code Review） | 人机协作的质量保障，建立可靠的审查流程 |
-| [Week 8](week8/) | 多技术栈应用（Multi-Stack Application） | Vibe Coding 的正确打开方式——有章法、有质量地快速开发 |
+| [Week 1](week1/README.md) | 提示工程（Prompt Engineering） | 6 种核心提示技术，从零开始学会跟 AI 说话 |
+| [Week 2](week2/README.md) | AI 辅助全栈开发（Full-Stack Development） | 用 AI 构建一个完整的应用，体验端到端的开发流程 |
+| [Week 3](week3/README.md) | MCP 服务器（Model Context Protocol） | 扩展 AI 的能力边界，让它能调用外部工具和数据 |
+| [Week 4](week4/README.md) | 自主编码代理（Autonomous Coding Agent） | Claude Code 深度实践，理解代理式开发的核心理念 |
+| [Week 5](week5/README.md) | Warp 环境下的 Agentic 开发 | 多代理工作流（multi-agent workflow），让多个 AI 协同工作 |
+| [Week 6](week6/README.md) | 安全扫描（Security Scanning） | AI 辅助的代码安全检查，把漏洞扼杀在开发阶段 |
+| [Week 7](week7/README.md) | AI 代码审查（Code Review） | 人机协作的质量保障，建立可靠的审查流程 |
+| [Week 8](week8/README.md) | 多技术栈应用（Multi-Stack Application） | Vibe Coding 的正确打开方式——有章法、有质量地快速开发 |
 
 ## 学习路径
 
@@ -51,14 +51,14 @@
 
 ## 导航
 
-- [Week 1 — 提示工程](week1/)
-- [Week 2 — AI 辅助全栈开发](week2/)
-- [Week 3 — MCP 服务器](week3/)
-- [Week 4 — 自主编码代理](week4/)
-- [Week 5 — Warp 环境下的 Agentic 开发](week5/)
-- [Week 6 — 安全扫描](week6/)
-- [Week 7 — AI 代码审查](week7/)
-- [Week 8 — 多技术栈应用](week8/)
+- [Week 1 — 提示工程](week1/README.md)
+- [Week 2 — AI 辅助全栈开发](week2/README.md)
+- [Week 3 — MCP 服务器](week3/README.md)
+- [Week 4 — 自主编码代理](week4/README.md)
+- [Week 5 — Warp 环境下的 Agentic 开发](week5/README.md)
+- [Week 6 — 安全扫描](week6/README.md)
+- [Week 7 — AI 代码审查](week7/README.md)
+- [Week 8 — 多技术栈应用](week8/README.md)
 
 ---
 

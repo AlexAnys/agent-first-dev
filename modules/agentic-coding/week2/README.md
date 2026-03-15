@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 1: 提示工程](../week1/) · [Week 3: MCP 服务器 →](../week3/) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 1: 提示工程](../week1/README.md) · [Week 3: MCP 服务器 →](../week3/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 2: AI 辅助全栈开发
 
@@ -19,6 +19,15 @@
 
 6-8 小时（首次接触 Web 开发），4-5 小时（有一定经验）
 
+## 学习顺序
+
+按以下顺序学习本周内容：
+
+1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — 应用架构概览、概念解释、任务导读
+2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+4. **进入下一周** → [Week 3: MCP 服务器](../week3/README.md)
+
 ## 文件索引
 
 | 文件 | 说明 |
@@ -34,4 +43,4 @@
 
 ---
 
-[← Week 1: 提示工程](../week1/) · [Week 3: MCP 服务器 →](../week3/)
+[← Week 1: 提示工程](../week1/README.md) · [Week 3: MCP 服务器 →](../week3/README.md)
