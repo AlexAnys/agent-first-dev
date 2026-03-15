@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [← Week 4: 自主编码代理](../week4/) · [Week 6: 安全扫描 →](../week6/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 5: Warp 环境下的 Agentic 开发
 
 在 Warp 终端中实践多代理工作流和自动化。
@@ -30,3 +32,7 @@
 本周与 Week 4 主题相近，核心差异在于使用 Warp 而非 Claude Code。如果你走快速路径且对 Warp 没有特别兴趣，可以安全跳过，直接进入 Week 6。
 
 如果你对"多代理协作"这个概念感兴趣，建议至少阅读 assignment-zh.md 中的"多代理工作流"部分。
+
+---
+
+[← Week 4: 自主编码代理](../week4/) · [Week 6: 安全扫描 →](../week6/)

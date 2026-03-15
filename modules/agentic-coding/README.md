@@ -1,3 +1,5 @@
+> [← 返回首页](../../README.md) · [术语表](../../TERMINOLOGY.md)
+
 # Agentic Coding — 与 AI 协作的软件开发
 
 > 本模块内容基于 Stanford CS146S: The Modern Software Developer 课程（https://themodernsoftware.dev），由 Mihail Eric 设计。原课程文件（assignment.md、writeup.md 及代码）完整保留。中文适配文件为本项目新增。
@@ -57,3 +59,7 @@
 - [Week 6 — 安全扫描](week6/)
 - [Week 7 — AI 代码审查](week7/)
 - [Week 8 — 多技术栈应用](week8/)
+
+---
+
+[← 返回首页](../../README.md) · [术语表](../../TERMINOLOGY.md) · [部署指南](../../guides/deployment-cn.md)
