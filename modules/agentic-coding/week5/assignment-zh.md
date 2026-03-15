@@ -127,4 +127,4 @@ Warp Drive 是 Warp 的特色功能之一，你可以用它来：
 - [ ] 理解多代理协作中的冲突问题和解决思路（如 git worktree）
 - [ ] 能说出"工具不同但方法论相同"的具体例子
 
-[开始 Week 6 →](../week6/)
+[开始 Week 6 →](../week6/README.md)

@@ -28,10 +28,10 @@
 
 | 周次 | 主题 |
 |------|------|
-| [Week 1](modules/agentic-coding/week1/) | 提示工程 (Prompt Engineering) — 与 AI 对话的 6 种核心技术 |
-| [Week 2](modules/agentic-coding/week2/) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 4](modules/agentic-coding/week4/) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 8](modules/agentic-coding/week8/) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
+| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 (Prompt Engineering) — 与 AI 对话的 6 种核心技术 |
+| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
+| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
+| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
 
 ### 完整路径（8 周）
 
@@ -39,14 +39,14 @@
 
 | 周次 | 主题 |
 |------|------|
-| [Week 1](modules/agentic-coding/week1/) | 提示工程 — 6 种核心提示技术 |
-| [Week 2](modules/agentic-coding/week2/) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 3](modules/agentic-coding/week3/) | MCP 服务器 — 扩展 AI 的能力边界 |
-| [Week 4](modules/agentic-coding/week4/) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 5](modules/agentic-coding/week5/) | Warp 环境下的 Agentic 开发 — 多代理工作流 |
-| [Week 6](modules/agentic-coding/week6/) | 安全扫描 — AI 辅助的代码安全检查 |
-| [Week 7](modules/agentic-coding/week7/) | AI 代码审查 — 人机协作的质量保障 |
-| [Week 8](modules/agentic-coding/week8/) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
+| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 — 6 种核心提示技术 |
+| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
+| [Week 3](modules/agentic-coding/week3/README.md) | MCP 服务器 — 扩展 AI 的能力边界 |
+| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
+| [Week 5](modules/agentic-coding/week5/README.md) | Warp 环境下的 Agentic 开发 — 多代理工作流 |
+| [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 — AI 辅助的代码安全检查 |
+| [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 — 人机协作的质量保障 |
+| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
 
 ### 深度路径
 
@@ -68,11 +68,11 @@ agent-first-dev/
 
 | 目录 | 说明 | 状态 |
 |------|------|------|
-| [`modules/agentic-coding/`](modules/agentic-coding/) | 核心模块：AI 辅助编码、提示工程、全栈开发、安全与部署 | 进行中 |
-| [`modules/app-dev-fundamentals/`](modules/app-dev-fundamentals/) | 应用开发基础：数据库、API、前后端概念 | 规划中 |
-| [`modules/getting-started/`](modules/getting-started/) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
-| [`guides/`](guides/) | 跨模块实用指南（如何选 AI 工具、如何调试等） | 规划中 |
-| [`resources/`](resources/) | 学习资源汇总：推荐阅读、视频、社区 | 规划中 |
+| [`modules/agentic-coding/`](modules/agentic-coding/README.md) | 核心模块：AI 辅助编码、提示工程、全栈开发、安全与部署 | 进行中 |
+| [`modules/app-dev-fundamentals/`](modules/app-dev-fundamentals/README.md) | 应用开发基础：数据库、API、前后端概念 | 规划中 |
+| [`modules/getting-started/`](modules/getting-started/README.md) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
+| [`guides/`](guides/README.md) | 跨模块实用指南（如何选 AI 工具、如何调试等） | 规划中 |
+| [`resources/`](resources/README.md) | 学习资源汇总：推荐阅读、视频、社区 | 规划中 |
 
 ---
 
