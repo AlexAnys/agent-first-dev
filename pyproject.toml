@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "modern-software-dev-assignments"
+name = "agent-first-dev"
 version = "0.1.0"
-description = "Course assignments with FastAPI + SQLite starter and tooling"
+description = "Agentic Coding 知识库 — 面向领域专家的 AI 辅助开发学习路径"
 authors = ["Course <course@example.com>"]
 readme = "README.md"
 packages = []
