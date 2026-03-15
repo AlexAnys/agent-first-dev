@@ -1,3 +1,5 @@
+> [← 本周导航](README.md) · [模块首页](../README.md)
+
 # Week 3 学习笔记
 
 ## 学习日期
@@ -44,4 +46,6 @@ _填写你的学习日期_
 - 在你的工作/领域中，有哪些场景可以通过 MCP 服务器让 AI 自动化？
 
 ## 下周预告
-Week 4 是整个课程的核心——你将深入使用 Claude Code，学习如何通过 CLAUDE.md、Slash Commands 和 SubAgents 来构建专业级的 AI 协作工作流。
+[Week 4](../week4/) 是整个课程的核心——你将深入使用 Claude Code，学习如何通过 CLAUDE.md、Slash Commands 和 SubAgents 来构建专业级的 AI 协作工作流。
+
+[开始 Week 4 →](../week4/)

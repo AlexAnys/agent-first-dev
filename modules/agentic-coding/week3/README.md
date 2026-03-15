@@ -1,3 +1,5 @@
+> [← 模块首页](../README.md) · [← Week 2: AI 辅助全栈开发](../week2/) · [Week 4: 自主编码代理 →](../week4/) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 3: MCP 服务器（Model Context Protocol）
 
 设计并构建一个 MCP 服务器，让 AI 能够连接和使用外部服务。
@@ -29,3 +31,7 @@
 ## 跳过指引
 
 如果走快速路径，可以只阅读 assignment-zh.md 中的 MCP 概念部分，理解"AI 如何连接外部工具"的思路，然后直接进入 Week 4。Week 4 会在实践中用到 MCP。
+
+---
+
+[← Week 2: AI 辅助全栈开发](../week2/) · [Week 4: 自主编码代理 →](../week4/)

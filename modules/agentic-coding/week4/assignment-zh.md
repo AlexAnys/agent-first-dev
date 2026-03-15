@@ -1,3 +1,5 @@
+> [← 本周导航](README.md) · [模块首页](../README.md) · [术语表](../../../TERMINOLOGY.md)
+
 # Week 4 中文导读：自主编码代理
 
 ## 这周要做什么
@@ -128,3 +130,7 @@ SubAgents 是三个功能中最高阶的。如果你是刚开始接触 Claude Co
 - [ ] 能解释 CLAUDE.md、Slash Commands、SubAgents 各自的用途
 - [ ] 用自动化真正改进了一个工作流程
 - [ ] 理解"配置 AI"和"使用 AI"的区别
+
+---
+
+[开始 Week 5 →](../week5/)
