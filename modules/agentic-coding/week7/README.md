@@ -20,8 +20,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：Modern Software Support
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/1NkPzpuSQt6Esbnr2-EnxM9007TL6ebSPFwITyVY-QxU/edit?usp=sharing) | Modern Software Support |
+| [Fri 嘉宾讲义](https://drive.google.com/file/d/1xAJPZk2MKNaoFVsNK3kndDZ-ILAY6V3p/view?usp=sharing) | Tomas Reimers: Graphite |
 
 ## 前置阅读
 
@@ -52,6 +54,8 @@
 
 1. [Lessons from a Million AI Code Reviews](https://www.youtube.com/watch?v=TswQeKftnaw) — Graphite CPO 分享 AI 审查经验（视频）
 2. [AI-Assisted Assessment in Modern Code Review](https://arxiv.org/pdf/2405.13565) — 学术论文：AI 辅助代码审查的系统评估
+3. [AI Code Review Best Practices](https://graphite.dev/guides/ai-code-review-implementation-best-practices) — Graphite 的 AI 代码审查实践指南
+4. [Code Review Essentials](https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html) — 代码审查基础：团队协作的核心实践
 
 ## 跳过指引
 

@@ -14,7 +14,7 @@
 
 说白了，AI 是你的搭档，不是你的替身。
 
-## 8 周内容索引
+## 10 周课程索引
 
 | 周次 | 主题 | 简介 |
 |------|------|------|
@@ -26,18 +26,32 @@
 | [Week 6](week6/README.md) | 安全扫描（Security Scanning） | AI 辅助的代码安全检查，把漏洞扼杀在开发阶段 |
 | [Week 7](week7/README.md) | AI 代码审查（Code Review） | 人机协作的质量保障，建立可靠的审查流程 |
 | [Week 8](week8/README.md) | 多技术栈应用（Multi-Stack Application） | Vibe Coding 的正确打开方式——有章法、有质量地快速开发 |
+| [Week 9](week9/README.md) | AI 系统监控（Agents Post-Deployment） | 生产环境监控与 AI 辅助事件响应（阅读 + 自学） |
+| [Week 10](week10/README.md) | AI 软件工程的未来（What's Next） | 行业展望与持续学习路径（阅读 + 自学） |
+
+## 课程的逻辑线
+
+10 周课程按 **Understand → Build → Harden → Ship → Operate** 的顺序组织，覆盖完整的软件生命周期：
+
+| 阶段 | 周次 | 你会学到 |
+|------|------|----------|
+| **理解** | Week 1-2 | LLM 的工作原理、提示技术、编码代理的架构。先理解工具，再使用工具。 |
+| **构建** | Week 3-5 | MCP 扩展 AI 能力、Claude Code 的代理模式、Warp 多代理协作。从单点工具到系统化工作流。 |
+| **加固** | Week 6-7 | AI 生成代码的安全扫描、人机协作的代码审查。写出来的代码要经得起检验。 |
+| **交付** | Week 8 | 多技术栈全栈应用。把前 7 周的能力综合运用，交付一个完整项目。 |
+| **运维与未来** | Week 9-10 | 生产环境监控、事件响应、行业趋势。软件上线不是终点，而是另一个起点。 |
 
 ## 学习路径
 
-不是所有人都有 8 周时间从头学到尾。根据你的情况，选一条适合自己的路：
+不是所有人都有 10 周时间从头学到尾。根据你的情况，选一条适合自己的路：
 
-### 快速路径（2-3 周）
+### 快速路径（4 周）
 
-**Week 1 → Week 4 → Week 8**
+**Week 1 → Week 2 → Week 4 → Week 8**
 
-理解提示 → 掌握协作 → 实战应用。如果你已经有一定的开发经验，想尽快上手 Agentic Coding 的核心技能，走这条路就够了。
+理解提示 → 掌握架构 → 深入代理 → 实战应用。如果你已经有一定的开发经验，想尽快上手 Agentic Coding 的核心技能，走这条路就够了。
 
-### 完整路径（8 周）
+### 完整路径（10 周）
 
 按顺序完成所有周。每周大概需要 5-8 小时，适合想系统学习的同学。这是最推荐的方式。
 
@@ -45,31 +59,18 @@
 
 完整路径 + 每周的扩展阅读和额外练习。适合想深入理解底层原理、未来打算在这个方向深耕的同学。
 
-## 关于 Week 9-10
+## 课程嘉宾
 
-原课程还包含 Week 9 和 Week 10，由于这两周以课堂互动为主，不适合独立学习形式，因此未收录。以下是这两周的主题概要和自学替代方案：
-
-### Week 9: AI 系统监控与自动化事件响应
-
-课程讲义主题：Monitoring and Incident Response。嘉宾：Resolve AI 团队。
-
-核心内容：如何用 AI 监控生产系统、自动化事件响应流程、以及 AI 在 DevOps/SRE 中的应用。
-
-### Week 10: AI 软件工程的未来
-
-课程讲义主题：The Future of AI Software Engineering。嘉宾：Martin Casado（a16z 合伙人）。
-
-核心内容：行业趋势展望、AI 对软件工程职业的影响、以及如何为 AI-first 的开发模式做准备。
-
-### 自学替代方案
-
-完成 8 周学习后，建议按以下步骤继续：
-
-1. **设计一个完整项目** — 选一个你关心的领域，定义一个用 Agentic Coding 完成的端到端项目
-2. **应用全部 8 周技能** — 项目中融入提示工程、MCP、自动化、安全扫描、代码审查
-3. **建立监控意识** — 部署后关注日志、错误率、性能指标（对应 Week 9 主题）
-4. **记录和分享** — 写一份项目回顾（Retrospective），总结 AI 协作中的经验教训
-5. **关注行业动态** — 持续跟踪 AI 开发工具的演进（对应 Week 10 主题）
+| 周次 | 嘉宾 | 身份 |
+|------|------|------|
+| Week 3 | Silas Alberti | Cognition（Devin）研究负责人 |
+| Week 4 | Boris Cherney | Anthropic，Claude Code 创建者 |
+| Week 5 | Zach Lloyd | Warp CEO |
+| Week 6 | Isaac Evans | Semgrep CEO |
+| Week 7 | Tomas Reimers | Graphite CPO |
+| Week 8 | Gaspar Garcia | Vercel AI 研究负责人 |
+| Week 9 | Mayank Agarwal & Milind Ganjoo | Resolve AI CTO & Technical Staff |
+| Week 10 | Martin Casado | a16z 合伙人 |
 
 ## 导航
 
@@ -81,6 +82,8 @@
 - [Week 6 — 安全扫描](week6/README.md)
 - [Week 7 — AI 代码审查](week7/README.md)
 - [Week 8 — 多技术栈应用](week8/README.md)
+- [Week 9 — AI 系统监控](week9/README.md)
+- [Week 10 — AI 软件工程的未来](week10/README.md)
 
 ---
 
