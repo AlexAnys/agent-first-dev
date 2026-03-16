@@ -6,13 +6,13 @@
 
 ## 为什么是现在？
 
-Vibe Coding 工具（v0、bolt.new、Replit Agent 等）让任何人都能在几分钟内生成一个 Demo。但 Demo 不是产品——它没有安全检查、没有错误处理、上线第一天就可能崩溃。
+Vibe Coding 工具（lovable、manus、v0、Replit Agent 等）让任何人都能在几分钟内生成一个 Demo。但 Demo 不是产品——它没有安全检查、没有错误处理、上线第一天就可能崩溃。
 
-Coding Agent 改变了这个等式。Claude Code、Cursor、Warp 这些工具不再只是"帮你补全代码"，而是可以像一个初级工程师一样，理解项目上下文、遵循工程规范、在整个软件生命周期中协助你工作。
+Coding Agent 的工程能力在2025年底彻底改变了。Claude Code、Cursor、Warp 这些工具不再只是"帮你补全代码"，而是可以像一个高级工程师一样，理解项目上下文、遵循工程规范、在整个软件生命周期中协助你工作。
 
 > "Modern AI tooling will not only enhance developer productivity but also democratize software engineering for a broader audience."
 
-这意味着：如果你是某个领域的专家——医生、律师、金融分析师、运营负责人——你不需要先学三年编程。你需要的是学会如何与 AI 协作开发，这正是本知识库要做的事。
+这意味着：如果你是某个领域的专家——医生、律师、金融分析师、运营负责人——你不需要先学三年编程。你需要的是学会如何与 AI 有效协作开发，这正是本知识库要做的事。
 
 ---
 
