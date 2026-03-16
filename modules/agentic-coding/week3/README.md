@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 2: AI 辅助全栈开发](../week2/) · [Week 4: 自主编码代理 →](../week4/) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 2: AI 辅助全栈开发](../week2/README.md) · [Week 4: 自主编码代理 →](../week4/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 3: MCP 服务器（Model Context Protocol）
 
@@ -18,6 +18,15 @@
 
 6-8 小时（需要查阅 MCP 文档），4-5 小时（有 API 开发经验）
 
+## 学习顺序
+
+按以下顺序学习本周内容：
+
+1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — MCP 概念解释、生态概览、任务导读
+2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+4. **进入下一周** → [Week 4: 自主编码代理](../week4/README.md)
+
 ## 文件索引
 
 | 文件 | 说明 |
@@ -34,4 +43,4 @@
 
 ---
 
-[← Week 2: AI 辅助全栈开发](../week2/) · [Week 4: 自主编码代理 →](../week4/)
+[← Week 2: AI 辅助全栈开发](../week2/README.md) · [Week 4: 自主编码代理 →](../week4/README.md)

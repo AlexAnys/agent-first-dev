@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 4: 自主编码代理](../week4/) · [Week 6: 安全扫描 →](../week6/) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 4: 自主编码代理](../week4/README.md) · [Week 6: 安全扫描 →](../week6/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 5: Warp 环境下的 Agentic 开发
 
@@ -18,6 +18,15 @@
 
 5-7 小时
 
+## 学习顺序
+
+按以下顺序学习本周内容：
+
+1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — Warp vs Claude Code 对比、多代理概念
+2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+4. **进入下一周** → [Week 6: 安全扫描](../week6/README.md)
+
 ## 文件索引
 
 | 文件 | 说明 |
@@ -35,4 +44,4 @@
 
 ---
 
-[← Week 4: 自主编码代理](../week4/) · [Week 6: 安全扫描 →](../week6/)
+[← Week 4: 自主编码代理](../week4/README.md) · [Week 6: 安全扫描 →](../week6/README.md)

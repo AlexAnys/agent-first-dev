@@ -133,4 +133,4 @@ SubAgents 是三个功能中最高阶的。如果你是刚开始接触 Claude Co
 
 ---
 
-[开始 Week 5 →](../week5/)
+[开始 Week 5 →](../week5/README.md)
