@@ -24,19 +24,17 @@
 按以下顺序学习本周内容：
 
 1. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 概念解释 + 环境准备 + 练习任务（完整中文版）
-2. **（可选）参考英文原文** → [assignment.md](assignment.md) — 原课程作业，供对照参考
-3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
-4. **进入下一周** → [Week 2: AI 辅助全栈开发](../week2/README.md)
+2. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+3. **进入下一周** → [Week 2: AI 辅助全栈开发](../week2/README.md)
 
 ## 文件索引
 
 | 文件 | 说明 |
 |------|------|
-| [assignment.md](assignment.md) | 原课程作业（英文） |
-| [assignment-zh.md](assignment-zh.md) | 中文导读与概念解释 |
-| [writeup-zh.md](writeup-zh.md) | 学习笔记模板（中文） |
+| [assignment-zh.md](assignment-zh.md) | 中文学习指南（概念解释 + 环境准备 + 练习任务） |
+| [writeup-zh.md](writeup-zh.md) | 学习笔记模板 |
 
-注意：本周没有原课程的 writeup.md 文件。
+> 本周也提供英文原版课程材料（[assignment.md](assignment.md)），可作为对比参考。所有内容已完整覆盖在中文指南中，无需额外阅读。
 
 ## 跳过指引
 
