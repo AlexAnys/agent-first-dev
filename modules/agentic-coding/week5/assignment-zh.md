@@ -119,6 +119,77 @@ Warp Drive 是 Warp 的特色功能之一，你可以用它来：
 
 ---
 
+## 环境准备
+
+### 1. 安装 Warp 终端
+
+从 [warp.dev](https://www.warp.dev/) 下载并安装 Warp。
+
+### 2. 学习资源
+
+推荐先浏览 [Warp University](https://www.warp.dev/university?slug=university)，了解 Warp 的核心功能和使用方式。
+
+### 3. 启动 Starter 应用
+
+和 Week 4 一样，本周也有一个配套的练习应用。启动步骤：
+
+```bash
+# 激活 conda 环境
+conda activate cs146s
+
+# （可选）安装 pre-commit hooks
+pre-commit install
+
+# 从 week5/ 目录启动应用
+make run
+```
+
+启动后访问 `http://localhost:8000` 查看前端，`http://localhost:8000/docs` 查看 API 文档。
+
+### 4. 应用结构说明
+
+```
+backend/                # FastAPI 后端应用
+frontend/               # 静态前端（由 FastAPI 托管）
+data/                   # SQLite 数据库 + 种子数据
+docs/                   # 代理驱动工作流的任务列表（TASKS.md）
+```
+
+先花几分钟浏览应用的现有功能，熟悉项目结构后再开始做任务。
+
+---
+
+## 练习任务
+
+### Part A：Warp Drive 功能（至少完成 1 个）
+
+创建可共享的 Warp Drive 提示（Prompt）、规则（Rule）或 MCP 服务器集成。示例方向：
+
+- **测试运行器**：运行测试并显示覆盖率（Coverage），自动重试不稳定的测试（Flaky Test）
+- **文档同步**：从 `/openapi.json` 生成或更新 `docs/API.md`，列出路由变化
+- **重构工具**：重命名模块（Module），自动更新导入（Import），运行 lint 和测试验证
+- **发布助手**：更新版本号（Version Bump），运行检查，生成变更日志（Changelog）
+- **集成 Git MCP 服务器**：让 Warp 自主操作 Git（创建分支、提交、生成 PR 说明等）
+
+> 建议：保持工作流聚焦，使用参数传递（而非硬编码），保持幂等性（Idempotent），优先使用非交互式步骤。
+
+### Part B：多代理工作流（至少完成 1 个）
+
+在 Warp 的不同标签页（Tab）中运行多个代理（Agent），同时处理不同的独立任务：
+
+1. 从 `week5/docs/TASKS.md` 中选择多个任务
+2. 在不同的 Warp 标签页中启动并发代理
+3. 挑战：你能同时运行多少个代理？
+4. 提示：`git worktree` 可以帮助避免代理之间的文件冲突（参见上文 "git worktree 简介"）
+
+### Part II：使用自动化
+
+用你在 Part A 和 Part B 中构建的自动化来改进工作流程。记录每个自动化解决了什么痛点（Pain Point）或加速了什么过程。
+
+**注意**：所有工作限制在 `week5/` 目录内（backend, frontend, logic, tests）。
+
+---
+
 ## 自检清单
 
 - [ ] 理解 Warp 和其他 AI 开发工具（如 Claude Code）的异同

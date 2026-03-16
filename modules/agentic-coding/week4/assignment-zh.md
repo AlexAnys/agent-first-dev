@@ -123,6 +123,114 @@ SubAgents 是三个功能中最高阶的。如果你是刚开始接触 Claude Co
 
 ---
 
+## 环境准备
+
+### 1. 启动 Starter Application
+
+1. 激活 conda 环境：
+   ```bash
+   conda activate cs146s
+   ```
+2. （可选）安装 pre-commit hooks：
+   ```bash
+   pre-commit install
+   ```
+3. 从 `week4/` 目录运行应用：
+   ```bash
+   make run
+   ```
+4. 打开 http://localhost:8000 查看前端，http://localhost:8000/docs 查看 API 文档
+5. 体验应用的当前功能，了解它能做什么
+
+### 2. 安装 Claude Code
+
+确保已安装 Claude Code CLI。这是本周练习的核心工具。
+
+### 3. 了解应用结构
+
+```
+week4/
+  backend/          # FastAPI 应用（路由、模型、服务）
+  frontend/         # 静态前端（由 FastAPI 提供服务）
+  data/             # SQLite 数据库和种子数据（seed data）
+  docs/             # 任务列表（TASKS.md）
+```
+
+### 4. 常用命令
+
+```bash
+make test      # 运行测试
+make format    # 格式化代码
+make lint      # 代码检查
+```
+
+---
+
+## 练习任务
+
+### Part I：构建自动化（从以下三类中选 2 个或更多）
+
+#### A) 自定义 Slash Commands
+
+在 `.claude/commands/` 目录下创建 Markdown 文件，定义可复用的自动化命令。Claude Code 会通过 `/命令名` 暴露这些命令。
+
+**示例 1：测试运行器**
+- 文件名：`tests.md`
+- 功能：运行 `pytest -q backend/tests --maxfail=1 -x`，如果通过则运行覆盖率检查（coverage）
+- 输入：可选的标记（marker）或路径（path）
+- 输出：失败摘要和下一步建议
+
+**示例 2：文档同步**
+- 文件名：`docs-sync.md`
+- 功能：读取 `/openapi.json`，更新 `docs/API.md`，列出路由变化（route deltas）
+- 输出：差异摘要（diff summary）和待办事项
+
+**示例 3：重构工具**
+- 文件名：`refactor-module.md`
+- 功能：重命名模块（如 `services/extract.py` 改为 `services/parser.py`），更新导入（imports），运行 lint/测试
+- 输出：修改文件清单和验证步骤
+
+> 建议：保持命令聚焦，使用 `$ARGUMENTS` 传参，优先使用幂等步骤（idempotent steps）。
+
+#### B) CLAUDE.md 指导文件
+
+在仓库根目录（或 `week4/` 子目录）创建 `CLAUDE.md`，引导 Claude 的行为。
+
+**可以包含的内容：**
+- 代码导航和入口点：如何运行应用、路由位置（`backend/app/routers`）、测试位置、数据库种子数据
+- 风格和安全边界：工具要求（black/ruff）、安全命令、禁止命令、lint/测试关卡（gates）
+- 工作流模板："添加端点时，先写失败测试（failing test），再实现，最后运行 pre-commit"
+
+> 建议：像迭代 Prompt 一样迭代 CLAUDE.md，保持简洁可执行。
+
+#### C) SubAgents（角色专业化）
+
+设计 2 个或更多协作的子代理（SubAgent），各负责一个工作流步骤。通常在 Slash Commands 里用 `claude` 子进程来实现。
+
+**示例 1：TestAgent + CodeAgent**
+- 流程：TestAgent 编写测试 -> CodeAgent 实现代码 -> TestAgent 验证
+
+**示例 2：DocsAgent + CodeAgent**
+- 流程：CodeAgent 添加路由 -> DocsAgent 更新文档并检查 OpenAPI 一致性
+
+**示例 3：DBAgent + RefactorAgent**
+- 流程：DBAgent 提出 Schema 变更 -> RefactorAgent 更新模型/路由/lint
+
+> 建议：使用检查清单（checklist），角色间用 `/clear` 重置上下文，独立任务可并行。
+
+### Part II：使用你的自动化
+
+用你在 Part I 构建的自动化来改进 starter application。记录每个自动化的使用过程和效果，写入 `writeup.md` 或 `writeup-zh.md`。
+
+---
+
+## 推荐学习资源
+
+- Claude Code 最佳实践: [anthropic.com/engineering/claude-code-best-practices](https://www.anthropic.com/engineering/claude-code-best-practices)
+- SubAgents 文档: [docs.anthropic.com/en/docs/claude-code/sub-agents](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
+
+---
+
 ## 自检清单
 
 - [ ] 创建了一个有效的 CLAUDE.md 文件
