@@ -1,4 +1,4 @@
-> [← 返回首页](../README.md) · [模块首页](modules/agentic-coding/README.md) · [术语表](TERMINOLOGY.md)
+> [← 返回首页](../README.md) · [模块首页](../modules/agentic-coding/README.md) · [术语表](../TERMINOLOGY.md)
 
 # 学习资源
 
