@@ -20,8 +20,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：AI Testing and Security
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/1C05bCLasMDigBbkwdWbiz4WrXibzi6ua4hQQbTod_8c/edit?usp=sharing) | AI Testing and Security |
+| Fri 嘉宾讲义 | Isaac Evans: Semgrep（讲义未公开） |
 
 ## 前置阅读
 
@@ -52,6 +54,8 @@
 
 1. [Finding Vulnerabilities with Claude Code & Codex](https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/) — Semgrep 用 AI 在开源项目中发现 46 个真实漏洞
 2. [Context Rot Research](https://research.trychroma.com/context-rot) — 上下文衰减对 AI 输出质量的影响研究
+3. [SAST vs DAST](https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html) — 静态分析与动态分析的对比（安全测试基础）
+4. [Agentic AI Threats](https://unit42.paloaltonetworks.com/agentic-ai-threats/) — Palo Alto Unit 42 对 AI 代理安全威胁的分析
 
 ## 跳过指引
 

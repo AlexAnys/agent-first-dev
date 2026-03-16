@@ -21,8 +21,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：Introduction to Coding LLMs and AI Development
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/1zT2Ofy88cajLTLkd7TcuSM4BCELvF9qQdHmlz33i4t0/edit?usp=sharing) | Introduction to Coding LLMs |
+| [Fri 讲义](https://docs.google.com/presentation/d/1MIhw8p6TLGdbQ9TcxhXSs5BaPf5d_h77QY70RHNfeGs/edit?usp=sharing) | AI Development Fundamentals |
 
 ## 前置阅读
 
@@ -52,6 +54,8 @@
 ## 背景扩展阅读
 
 1. [How OpenAI Uses Codex](https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf) — OpenAI 内部如何使用 Codex 的技术报告
+2. [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) — 系统化的提示工程技术指南
+3. [AI Prompt Engineering: A Deep Dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) — 提示工程深度讲解（视频）
 
 ## 跳过指引
 

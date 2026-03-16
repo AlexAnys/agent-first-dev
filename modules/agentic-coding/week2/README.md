@@ -21,8 +21,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：The Anatomy of Coding Agents
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/11CP26VhsjnZOmi9YFgLlonzdib9BLyAlgc4cEvC5Fps/edit?usp=sharing) | The Anatomy of Coding Agents |
+| [Fri 讲义](https://docs.google.com/presentation/d/1zSC2ra77XOUrJeyS85houg1DU7z9hq5Y4ebagTch-5o/edit?usp=sharing) | Coding Agents Deep Dive |
 
 ## 前置阅读
 

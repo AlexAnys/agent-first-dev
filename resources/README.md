@@ -2,7 +2,7 @@
 
 # 学习资源
 
-按主题组织的推荐阅读列表，涵盖 8 周课程中提到的所有资源。每条资源标注关联周次，方便交叉引用。
+按主题组织的推荐阅读列表，涵盖 10 周课程中提到的所有资源。每条资源标注关联周次，方便交叉引用。
 
 ---
 
@@ -12,6 +12,8 @@
 |------|------|----------|------|
 | [Deep Dive into LLMs](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 视频 | Week 1 | Karpathy 的 LLM 深度讲解（约 3.5 小时，建议至少看前 30 分钟） |
 | [Prompt Engineering Overview](https://cloud.google.com/discover/what-is-prompt-engineering) | 文章 | Week 1 | Google 的提示工程系统概览 |
+| [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) | 指南 | Week 1 | 系统化的提示工程技术指南 |
+| [AI Prompt Engineering: A Deep Dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) | 视频 | Week 1 | 提示工程深度讲解 |
 
 ## AI 辅助开发
 
@@ -26,6 +28,8 @@
 | [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | 文章 | Week 4 | 官方最佳实践指南 |
 | [Good Context Good Code](https://blog.stockapp.com/good-context-good-code/) | 文章 | Week 4 | StockApp 团队通过上下文管理提升 2.5x 生产力的案例 |
 | [Peeking Under the Hood of Claude Code](https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62) | 文章 | Week 4 | Claude Code 内部工作原理分析 |
+| [Awesome Claude Agents](https://github.com/vijaythecoder/awesome-claude-agents) | 代码 | Week 4 | Claude Code 代理模式的社区资源集 |
+| [Super Claude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) | 代码 | Week 4 | 增强 Claude Code 能力的开源框架 |
 | [How Warp Uses Warp to Build Warp](https://notion.warp.dev/How-Warp-uses-Warp-to-build-Warp-21643263616d81a6b9e3e63fd8a7380c) | 文章 | Week 5 | Warp 团队自己如何使用 Warp 进行开发 |
 | [Context Rot Research](https://research.trychroma.com/context-rot) | 研究 | Week 6 | 上下文衰减对 AI 输出质量的影响研究 |
 
@@ -48,6 +52,8 @@
 | [OWASP Top Ten](https://owasp.org/www-project-top-ten/) | 文档 | Week 6 | Web 安全十大风险类型，安全入门必读 |
 | [GitHub Copilot RCE via Prompt Injection](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) | 文章 | Week 6 | Copilot 被提示注入攻击的真实案例 |
 | [Finding Vulnerabilities with Claude Code &amp; Codex](https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/) | 文章 | Week 6 | Semgrep 用 AI 在开源项目中发现 46 个真实漏洞 |
+| [SAST vs DAST](https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html) | 文章 | Week 6 | 静态分析与动态分析的对比 |
+| [Agentic AI Threats](https://unit42.paloaltonetworks.com/agentic-ai-threats/) | 文章 | Week 6 | Palo Alto Unit 42 对 AI 代理安全威胁的分析 |
 
 ## 代码审查与质量
 
@@ -57,6 +63,19 @@
 | [How to Review Code Effectively](https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/) | 文章 | Week 7 | GitHub Staff Engineer 的代码审查方法论 |
 | [Lessons from a Million AI Code Reviews](https://www.youtube.com/watch?v=TswQeKftnaw) | 视频 | Week 7 | Graphite CPO 分享 AI 审查经验 |
 | [AI-Assisted Assessment in Modern Code Review](https://arxiv.org/pdf/2405.13565) | 论文 | Week 7 | 学术论文：AI 辅助代码审查的系统评估 |
+| [AI Code Review Best Practices](https://graphite.dev/guides/ai-code-review-implementation-best-practices) | 文章 | Week 7 | Graphite 的 AI 代码审查实践指南 |
+| [Code Review Essentials](https://blakesmith.me/2015/02/09/code-review-essentials-for-software-teams.html) | 文章 | Week 7 | 代码审查基础：团队协作的核心实践 |
+
+## 监控与运维
+
+| 资源 | 类型 | 关联周次 | 说明 |
+|------|------|----------|------|
+| [Introduction to Site Reliability Engineering](https://sre.google/sre-book/introduction/) | 文档 | Week 9 | Google SRE Book 入门章节 |
+| [Observability Basics You Should Know](https://www.splunk.com/en_us/blog/learn/observability.html) | 文章 | Week 9 | 可观测性基础概念 |
+| [Kubernetes Troubleshooting with AI](https://www.resolveai.io/blog/kubernetes-troubleshooting-with-ai) | 文章 | Week 9 | 用 AI 诊断 Kubernetes 问题 |
+| [Your New Autonomous Teammate](https://www.resolveai.io/blog/your-new-autonomous-teammate) | 文章 | Week 9 | Resolve AI 的自主代理理念 |
+| [Role of Multi Agent Systems in Making Engineers AI-native](https://www.resolveai.io/blog/role-of-multi-agent-systems-in-making-engineers-ai-native) | 文章 | Week 9 | 多代理系统在工程团队中的角色 |
+| [Benefits of Agentic AI in On-call Engineering](https://www.resolveai.io/blog/benefits-of-agentic-ai-in-on-call-engineering) | 文章 | Week 9 | AI 代理在 On-call 工程中的价值 |
 
 ## 多技术栈与应用生成
 
@@ -76,3 +95,5 @@
 | Week 6 | Isaac Evans | Semgrep CEO | AI Testing and Security |
 | Week 7 | Tomas Reimers | Graphite CPO | Modern Software Support |
 | Week 8 | Gaspar Garcia | Vercel AI 研究负责人 | Automated UI and App Building |
+| Week 9 | Mayank Agarwal & Milind Ganjoo | Resolve AI CTO & Technical Staff | Monitoring and Incident Response |
+| Week 10 | Martin Casado | a16z 合伙人 | The Future of AI Software Engineering |
