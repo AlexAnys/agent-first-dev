@@ -19,13 +19,26 @@
 
 8-10 小时（深度实践），5-6 小时（快速路径）
 
+## 课程讲义
+
+[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：Coding Agent Patterns
+<!-- TODO: 替换为 Google Slides 直链 -->
+
+## 前置阅读
+
+1. [How Anthropic Uses Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf) — Anthropic 内部如何使用 Claude Code（PDF 报告）
+2. [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) — 官方最佳实践指南
+
 ## 学习顺序
 
 按以下顺序学习本周内容：
 
-1. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 核心概念 + 环境准备 + 练习任务（完整中文版）
-2. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
-3. **进入下一周** → [Week 5: Warp Agentic 开发](../week5/README.md)
+1. **浏览课程讲义** → 见上方[课程讲义](#课程讲义)（快速翻阅，了解本周框架）
+2. **阅读前置材料** → 见上方[前置阅读](#前置阅读)
+3. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 核心概念 + 环境准备 + 练习任务（完整中文版）
+4. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+5. **（可选）深入阅读** → 见下方[背景扩展阅读](#背景扩展阅读)
+6. **进入下一周** → [Week 5: Warp Agentic 开发](../week5/README.md)
 
 ## 文件索引
 
@@ -35,6 +48,11 @@
 | [writeup-zh.md](writeup-zh.md) | 学习笔记模板 |
 
 > 本周也提供英文原版课程材料（[assignment.md](assignment.md)、[writeup.md](writeup.md)），可作为对比参考。所有内容已完整覆盖在中文指南中，无需额外阅读。
+
+## 背景扩展阅读
+
+1. [Good Context Good Code](https://blog.stockapp.com/good-context-good-code/) — StockApp 团队通过上下文管理提升 2.5x 生产力的案例
+2. [Peeking Under the Hood of Claude Code](https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62) — Claude Code 内部工作原理分析
 
 ## 为什么这周特别重要
 
