@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 7: AI 代码审查](../week7/README.md) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 7: AI 代码审查](../week7/README.md) · [Week 9: AI 系统监控 →](../week9/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 8: 多技术栈应用（Multi-Stack Apps）
 
@@ -20,8 +20,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：Automated UI and App Building
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/1GrVLsfMFIXMiGjIW9D7EJIyLYh_-3ReHHNd_vRfZUoo/edit?usp=sharing) | Automated UI and App Building |
+| [Fri 嘉宾讲义](https://docs.google.com/presentation/d/1Jf2aN5zIChd5tT86rZWWqY-iDWbxgR-uynKJxBR7E9E/edit?usp=sharing) | Gaspar Garcia: Vercel AI |
 
 ## 前置阅读
 
@@ -36,7 +38,7 @@
 3. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 概念回顾 + 环境准备 + 练习任务（完整中文版）
 4. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
 5. **（可选）深入阅读** → 见下方[背景扩展阅读](#背景扩展阅读)
-6. **完成!** → [返回模块首页](../README.md) · [返回知识库首页](../../../README.md)
+6. **进入下一周** → [Week 9: AI 系统监控](../week9/README.md)
 
 ## 文件索引
 
@@ -57,4 +59,4 @@
 
 ---
 
-[← Week 7: AI 代码审查](../week7/README.md) · [← 模块首页](../README.md)
+[← Week 7: AI 代码审查](../week7/README.md) · [Week 9: AI 系统监控 →](../week9/README.md)

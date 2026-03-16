@@ -1,78 +1,75 @@
-# Agent-First Dev -- Agentic Coding 知识库
+# Agent-First Dev
 
-> 面向领域专家的 AI 辅助开发学习路径，改编自 Stanford CS146S 课程。
+> 面向领域专家的 AI 辅助开发知识库。不教你"从零学编程"，教你如何与 AI 协作构建真实可用的软件。
 
-**目录**: [学习路径](#学习路径) · [模块索引](#模块索引) · [前置要求](#前置要求) · [如何使用](#如何使用这个知识库) · [致谢](#致谢)
+**目录**: [为什么是现在](#为什么是现在) · [模块总览](#模块总览) · [前置要求](#前置要求) · [如何使用](#如何使用这个知识库) · [致谢](#致谢)
 
-## 这个项目是什么？
+## 为什么是现在？
 
-如果你是某个领域的专家 -- 医生、律师、金融分析师、运营负责人 -- 但没有计算机科学 (Computer Science) 背景，这个知识库就是为你准备的。
+Vibe Coding 工具（v0、bolt.new、Replit Agent 等）让任何人都能在几分钟内生成一个 Demo。但 Demo 不是产品——它没有安全检查、没有错误处理、上线第一天就可能崩溃。
 
-你不需要先学三年编程，再去做一个解决自己领域问题的应用。借助 Agentic Coding（让 AI 代理帮你写代码），你可以从第一天就开始构建真实可用的软件。
+Coding Agent 改变了这个等式。Claude Code、Cursor、Warp 这些工具不再只是"帮你补全代码"，而是可以像一个初级工程师一样，理解项目上下文、遵循工程规范、在整个软件生命周期中协助你工作。
 
-**30 秒了解核心价值：**
+> "Modern AI tooling will not only enhance developer productivity but also democratize software engineering for a broader audience."
 
-- 不教你"从零学编程"，而是教你如何与 AI 协作开发
-- 每个模块都有真实项目，学完就能用
-- 面向零代码经验的领域专家设计，但有经验的开发者也能从中受益
+这意味着：如果你是某个领域的专家——医生、律师、金融分析师、运营负责人——你不需要先学三年编程。你需要的是学会如何与 AI 协作开发，这正是本知识库要做的事。
 
 ---
 
-## 学习路径
+## 模块总览
 
-根据你的时间和目标，选择适合的路径：
+知识库按模块组织，每个模块聚焦一个完整主题。
 
-### 快速路径（4 周）
-
-适合时间有限、想快速上手的人。
-
-| 周次 | 主题 |
-|------|------|
-| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 (Prompt Engineering) — 与 AI 对话的 6 种核心技术 |
-| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
-
-### 完整路径（8 周）
-
-系统学习全部内容，建立完整知识体系。
-
-| 周次 | 主题 |
-|------|------|
-| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 — 6 种核心提示技术 |
-| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 3](modules/agentic-coding/week3/README.md) | MCP 服务器 — 扩展 AI 的能力边界 |
-| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 5](modules/agentic-coding/week5/README.md) | Warp 环境下的 Agentic 开发 — 多代理工作流 |
-| [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 — AI 辅助的代码安全检查 |
-| [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 — 人机协作的质量保障 |
-| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
-
-### 深度路径
-
-完成全部 8 周内容，并深入每个模块的扩展资源和参考文献。适合想深入理解原理、未来可能转向技术岗位的学习者。
-
----
-
-## 模块索引
-
-```
-agent-first-dev/
-  modules/
-    agentic-coding/       -- 核心模块，基于 Stanford CS146S 课程内容
-    app-dev-fundamentals/  -- 应用开发基础（规划中）
-    getting-started/       -- 入门指南（规划中）
-  guides/                 -- 跨模块实用指南
-  resources/              -- 学习资源汇总
-```
-
-| 目录 | 说明 | 状态 |
+| 模块 | 说明 | 状态 |
 |------|------|------|
-| [`modules/agentic-coding/`](modules/agentic-coding/README.md) | 核心模块：AI 辅助编码、提示工程、全栈开发、安全与部署 | 进行中 |
-| [`modules/app-dev-fundamentals/`](modules/app-dev-fundamentals/README.md) | 应用开发基础：数据库、API、前后端概念 | 规划中 |
-| [`modules/getting-started/`](modules/getting-started/README.md) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
-| [`guides/`](guides/README.md) | 跨模块实用指南（如何选 AI 工具、如何调试等） | 规划中 |
-| [`resources/`](resources/README.md) | 学习资源汇总：推荐阅读、视频、社区 | 规划中 |
+| [**Agentic Coding**](modules/agentic-coding/README.md) | 与 AI 协作的软件开发（改编自 Stanford CS146S，10 周） | **进行中** |
+| [App Dev Fundamentals](modules/app-dev-fundamentals/README.md) | 应用开发基础：数据库、API、前后端概念 | 规划中 |
+| [Getting Started](modules/getting-started/README.md) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
+
+| 其他资源 | 说明 |
+|----------|------|
+| [`guides/`](guides/README.md) | 跨模块实用指南（如何选 AI 工具、如何调试等） |
+| [`resources/`](resources/README.md) | 学习资源汇总：推荐阅读、视频、社区 |
+| [`TERMINOLOGY.md`](TERMINOLOGY.md) | 术语表 |
+
+---
+
+## 模块 1: Agentic Coding
+
+> 改编自 [Stanford CS146S](https://themodernsoftware.dev)，由 Mihail Eric 设计。完整的 10 周课程，覆盖从提示工程到系统监控的软件全生命周期。
+>
+> → [**模块首页**](modules/agentic-coding/README.md)（课程逻辑、学习路径、嘉宾一览）
+
+| 周次 | 主题 | 一句话简介 |
+|------|------|-----------|
+| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 | 6 种核心提示技术，从零开始学会跟 AI 说话 |
+| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 | 用 AI 构建一个完整的 Web 应用 |
+| [Week 3](modules/agentic-coding/week3/README.md) | MCP 服务器 | 扩展 AI 的能力边界，让它能调用外部工具和数据 |
+| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 | Claude Code 深度实践，理解代理式开发的核心理念 |
+| [Week 5](modules/agentic-coding/week5/README.md) | Warp Agentic 开发 | 多代理工作流，让多个 AI 协同工作 |
+| [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 | AI 辅助的代码安全检查 |
+| [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 | 人机协作的质量保障 |
+| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 | Vibe Coding 的正确打开方式 |
+| [Week 9](modules/agentic-coding/week9/README.md) | AI 系统监控 | 生产环境监控与事件响应（阅读 + 自学） |
+| [Week 10](modules/agentic-coding/week10/README.md) | AI 软件工程的未来 | 行业展望与持续学习路径（阅读 + 自学） |
+
+**快速路径**: Week 1 → 2 → 4 → 8 · **完整路径**: Week 1-10 · 详见[模块首页](modules/agentic-coding/README.md)
+
+---
+
+## 模块 2: App Dev Fundamentals（规划中）
+
+> 应用开发基础：数据库、API、前后端概念。为没有开发背景的领域专家补齐必要的技术基础。
+>
+> → [模块首页](modules/app-dev-fundamentals/README.md)
+
+---
+
+## 模块 3: Getting Started（规划中）
+
+> 入门指南：环境搭建、工具选择、从零完成第一个项目。
+>
+> → [模块首页](modules/getting-started/README.md)
 
 ---
 
@@ -87,17 +84,17 @@ agent-first-dev/
 
 ## 如何使用这个知识库
 
-1. **先选路径**：根据上面的学习路径选择适合自己的节奏
-2. **从 `modules/agentic-coding/` 开始**：这是核心内容，按周次顺序阅读
-3. **遇到不懂的术语**：查阅根目录下的 [`TERMINOLOGY.md`（术语表）](TERMINOLOGY.md)
-4. **跳过可以跳过的**：如果某个模块你已经熟悉，直接跳到下一个
-5. **动手做项目**：每周都有练习，建议跟着做，光读不练效果减半
+1. **选择模块**：从上方[模块总览](#模块总览)选择感兴趣的主题，或直接点进某一周
+2. **查看模块首页**：每个模块都有独立的 README，包含课程逻辑、学习路径和推荐顺序
+3. **遇到不懂的术语**：查阅 [`TERMINOLOGY.md`（术语表）](TERMINOLOGY.md)
+4. **跳过可以跳过的**：如果某个部分你已经熟悉，直接跳到下一个
+5. **动手做项目**：每个模块都有练习，建议跟着做，光读不练效果减半
 
 ---
 
 ## 致谢
 
-本知识库改编自 Stanford CS146S 课程，由 Mihail Eric 主讲。
+本知识库的 Agentic Coding 模块改编自 Stanford CS146S 课程，由 Mihail Eric 主讲。
 
 - 原始课程网站: [The Modern Software Developer](https://themodernsoftware.dev)
 - 课程设计和原始内容版权归 Stanford / Mihail Eric 所有

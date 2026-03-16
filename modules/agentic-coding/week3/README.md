@@ -20,8 +20,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：The AI IDE
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/11pQNCde_mmRnImBat0Zymnp8TCS_cT_1up7zbcj6Sjg/edit?usp=sharing) | The AI IDE |
+| [Fri 嘉宾讲义](https://docs.google.com/presentation/d/1i0pRttHf72lgz8C-n7DSegcLBgncYZe_ppU7dB9zhUA/edit?usp=sharing) | Silas Alberti: Devin & AI IDE |
 
 ## 前置阅读
 

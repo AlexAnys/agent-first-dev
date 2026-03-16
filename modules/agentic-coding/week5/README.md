@@ -20,8 +20,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：The Modern Terminal
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/1Djd4eBLBbRkma8rFnJAWMT0ptct_UGB8hipmoqFVkxQ/edit?usp=sharing) | The Modern Terminal |
+| [Fri 嘉宾讲义](https://www.figma.com/slides/xMFnMpMPu9Y2lkrLFMSPST) | Zach Lloyd: Warp |
 
 ## 前置阅读
 
