@@ -18,13 +18,26 @@
 
 4-5 小时
 
+## 课程讲义
+
+[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：AI Testing and Security
+<!-- TODO: 替换为 Google Slides 直链 -->
+
+## 前置阅读
+
+1. [OWASP Top Ten](https://owasp.org/www-project-top-ten/) — Web 安全十大风险类型，安全入门必读
+2. [GitHub Copilot RCE via Prompt Injection](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) — Copilot 被提示注入攻击的真实案例
+
 ## 学习顺序
 
 按以下顺序学习本周内容：
 
-1. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 安全概念 + 环境准备 + 练习任务（完整中文版）
-2. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
-3. **进入下一周** → [Week 7: AI 代码审查](../week7/README.md)
+1. **浏览课程讲义** → 见上方[课程讲义](#课程讲义)（快速翻阅，了解本周框架）
+2. **阅读前置材料** → 见上方[前置阅读](#前置阅读)
+3. **阅读并完成中文指南** → [assignment-zh.md](assignment-zh.md) — 安全概念 + 环境准备 + 练习任务（完整中文版）
+4. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+5. **（可选）深入阅读** → 见下方[背景扩展阅读](#背景扩展阅读)
+6. **进入下一周** → [Week 7: AI 代码审查](../week7/README.md)
 
 ## 文件索引
 
@@ -34,6 +47,11 @@
 | [writeup-zh.md](writeup-zh.md) | 学习笔记模板 |
 
 > 本周也提供英文原版课程材料（[assignment.md](assignment.md)、[writeup.md](writeup.md)），可作为对比参考。所有内容已完整覆盖在中文指南中，无需额外阅读。
+
+## 背景扩展阅读
+
+1. [Finding Vulnerabilities with Claude Code & Codex](https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/) — Semgrep 用 AI 在开源项目中发现 46 个真实漏洞
+2. [Context Rot Research](https://research.trychroma.com/context-rot) — 上下文衰减对 AI 输出质量的影响研究
 
 ## 跳过指引
 
