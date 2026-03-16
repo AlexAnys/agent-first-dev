@@ -1,5 +1,7 @@
 > [← 本周导航](README.md) · [模块首页](../README.md) · [术语表](../../../TERMINOLOGY.md)
 
+> **本周课程嘉宾**：Boris Cherney，Anthropic，Claude Code 创建者。他分享了 Claude Code 的设计哲学和 Coding Agent 模式的核心理念。
+
 # Week 4 中文导读：自主编码代理
 
 ## 这周要做什么

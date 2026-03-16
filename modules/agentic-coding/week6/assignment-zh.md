@@ -1,5 +1,7 @@
 > [← 本周导航](README.md) · [模块首页](../README.md) · [术语表](../../../TERMINOLOGY.md)
 
+> **本周课程嘉宾**：Isaac Evans，Semgrep CEO。他分享了用 AI 工具发现真实安全漏洞的经验，以及 AI 时代的安全测试策略。
+
 # Week 6 中文导读：安全扫描（Security Scanning）
 
 ## 这周在干什么

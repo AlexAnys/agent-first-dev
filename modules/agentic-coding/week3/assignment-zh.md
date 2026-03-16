@@ -1,5 +1,7 @@
 > [← 本周导航](README.md) · [模块首页](../README.md) · [术语表](../../../TERMINOLOGY.md)
 
+> **本周课程嘉宾**：Silas Alberti，Cognition（Devin）研究负责人。他分享了 AI IDE 的设计理念和 Devin 在自主编码方面的实践经验。
+
 # Week 3 中文导读：构建 MCP 服务器
 
 ## 这周要做什么
