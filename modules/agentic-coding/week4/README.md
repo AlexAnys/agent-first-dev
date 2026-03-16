@@ -21,8 +21,10 @@
 
 ## 课程讲义
 
-[本周讲义 Slides](https://themodernsoftware.dev/) — 本周主题：Coding Agent Patterns
-<!-- TODO: 替换为 Google Slides 直链 -->
+| 讲义 | 主题 |
+|------|------|
+| [Mon 讲义](https://docs.google.com/presentation/d/19mgkwAnJDc7JuJy0zhhoY0ZC15DiNpxL8kchPDnRkRQ/edit?usp=sharing) | Coding Agent Patterns |
+| [Fri 嘉宾讲义](https://docs.google.com/presentation/d/1bv7Zozn6z45CAh-IyX99dMPMyXCHC7zj95UfwErBYQ8/edit?usp=sharing) | Boris Cherney: Claude Code |
 
 ## 前置阅读
 
@@ -53,6 +55,8 @@
 
 1. [Good Context Good Code](https://blog.stockapp.com/good-context-good-code/) — StockApp 团队通过上下文管理提升 2.5x 生产力的案例
 2. [Peeking Under the Hood of Claude Code](https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62) — Claude Code 内部工作原理分析
+3. [Awesome Claude Agents](https://github.com/vijaythecoder/awesome-claude-agents) — Claude Code 代理模式的社区资源集
+4. [Super Claude Framework](https://github.com/SuperClaude-Org/SuperClaude_Framework) — 增强 Claude Code 能力的开源框架
 
 ## 为什么这周特别重要
 

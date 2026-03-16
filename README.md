@@ -2,55 +2,59 @@
 
 > 面向领域专家的 AI 辅助开发学习路径，改编自 Stanford CS146S 课程。
 
-**目录**: [学习路径](#学习路径) · [模块索引](#模块索引) · [前置要求](#前置要求) · [如何使用](#如何使用这个知识库) · [致谢](#致谢)
+**目录**: [为什么是现在](#为什么是现在) · [课程的逻辑](#课程的逻辑) · [10 周内容一览](#10-周内容一览) · [模块索引](#模块索引) · [前置要求](#前置要求) · [如何使用](#如何使用这个知识库) · [致谢](#致谢)
 
-## 这个项目是什么？
+## 为什么是现在？
 
-如果你是某个领域的专家 -- 医生、律师、金融分析师、运营负责人 -- 但没有计算机科学 (Computer Science) 背景，这个知识库就是为你准备的。
+Vibe Coding 工具（v0、bolt.new、Replit Agent 等）让任何人都能在几分钟内生成一个 Demo。但 Demo 不是产品——它没有安全检查、没有错误处理、上线第一天就可能崩溃。
 
-你不需要先学三年编程，再去做一个解决自己领域问题的应用。借助 Agentic Coding（让 AI 代理帮你写代码），你可以从第一天就开始构建真实可用的软件。
+Coding Agent 改变了这个等式。Claude Code、Cursor、Warp 这些工具不再只是"帮你补全代码"，而是可以像一个初级工程师一样，理解项目上下文、遵循工程规范、在整个软件生命周期中协助你工作。
 
-**30 秒了解核心价值：**
+> "Modern AI tooling will not only enhance developer productivity but also democratize software engineering for a broader audience."
+> — Stanford CS146S 课程定位
 
-- 不教你"从零学编程"，而是教你如何与 AI 协作开发
-- 每个模块都有真实项目，学完就能用
-- 面向零代码经验的领域专家设计，但有经验的开发者也能从中受益
+这意味着：如果你是某个领域的专家——医生、律师、金融分析师、运营负责人——你不需要先学三年编程，再去做一个解决自己领域问题的应用。你需要的是学会如何与 AI 协作开发，这正是本知识库教的。
 
----
+## 课程的逻辑
 
-## 学习路径
+10 周课程覆盖一个完整的软件生命周期：
+
+```
+Phase 1 — 理解 (Week 1-2)     LLM 原理 + 编码代理架构
+Phase 2 — 构建 (Week 3-5)     AI IDE + 代理模式 + 现代终端
+Phase 3 — 加固 (Week 6-7)     安全扫描 + 代码审查
+Phase 4 — 交付 (Week 8)       多技术栈全栈应用
+Phase 5 — 运维与未来 (Week 9-10)  监控 + 行业展望
+```
+
+**Understand → Build → Harden → Ship → Operate** — 每个阶段都有明确的产出，后一阶段建立在前一阶段的基础上。
+
+## 10 周内容一览
 
 根据你的时间和目标，选择适合的路径：
 
 ### 快速路径（4 周）
 
-适合时间有限、想快速上手的人。
+**Week 1 → 2 → 4 → 8** — 理解提示 → 掌握架构 → 深入代理 → 实战应用。适合有一定开发经验、想快速上手 Agentic Coding 的人。
 
-| 周次 | 主题 |
-|------|------|
-| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 (Prompt Engineering) — 与 AI 对话的 6 种核心技术 |
-| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
+### 完整路径（10 周）
 
-### 完整路径（8 周）
-
-系统学习全部内容，建立完整知识体系。
-
-| 周次 | 主题 |
-|------|------|
-| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 — 6 种核心提示技术 |
-| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 — 用 AI 构建完整应用 |
-| [Week 3](modules/agentic-coding/week3/README.md) | MCP 服务器 — 扩展 AI 的能力边界 |
-| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 — Claude Code 深度实践 |
-| [Week 5](modules/agentic-coding/week5/README.md) | Warp 环境下的 Agentic 开发 — 多代理工作流 |
-| [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 — AI 辅助的代码安全检查 |
-| [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 — 人机协作的质量保障 |
-| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 — Vibe Coding 的正确打开方式 |
+| 周次 | 主题 | 实践作业 | 嘉宾 |
+|------|------|----------|------|
+| [Week 1](modules/agentic-coding/week1/README.md) | 提示工程 | 6 种提示技术练习 | — |
+| [Week 2](modules/agentic-coding/week2/README.md) | AI 辅助全栈开发 | 用 AI 构建完整 Web 应用 | — |
+| [Week 3](modules/agentic-coding/week3/README.md) | MCP 服务器 | 构建 MCP 服务器 | Silas Alberti (Cognition) |
+| [Week 4](modules/agentic-coding/week4/README.md) | 自主编码代理 | Claude Code 深度实践 | Boris Cherney (Anthropic) |
+| [Week 5](modules/agentic-coding/week5/README.md) | Warp Agentic 开发 | 多代理工作流 | Zach Lloyd (Warp) |
+| [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 | Semgrep 安全检查 | Isaac Evans (Semgrep) |
+| [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 | 人机协作代码审查 | Tomas Reimers (Graphite) |
+| [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 | 三种技术栈构建同一应用 | Gaspar Garcia (Vercel) |
+| [Week 9](modules/agentic-coding/week9/README.md) | AI 系统监控 | 阅读 + 自学实践 | Mayank Agarwal & Milind Ganjoo (Resolve AI) |
+| [Week 10](modules/agentic-coding/week10/README.md) | AI 软件工程的未来 | 阅读 + 自学实践 | Martin Casado (a16z) |
 
 ### 深度路径
 
-完成全部 8 周内容，并深入每个模块的扩展资源和参考文献。适合想深入理解原理、未来可能转向技术岗位的学习者。
+完成全部 10 周内容，并深入每个模块的扩展资源和参考文献。适合想深入理解原理、未来可能转向技术岗位的学习者。
 
 ---
 
