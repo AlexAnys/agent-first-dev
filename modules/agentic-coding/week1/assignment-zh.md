@@ -100,4 +100,4 @@ assignment.md 中包含 6 个实践任务，每个对应一种提示技术。下
 
 ---
 
-[开始 Week 2 →](../week2/)
+[开始 Week 2 →](../week2/README.md)

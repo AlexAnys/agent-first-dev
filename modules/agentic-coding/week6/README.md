@@ -1,4 +1,4 @@
-> [← 模块首页](../README.md) · [← Week 5: Warp Agentic 开发](../week5/) · [Week 7: AI 代码审查 →](../week7/) · [术语表](../../../TERMINOLOGY.md)
+> [← 模块首页](../README.md) · [← Week 5: Warp Agentic 开发](../week5/README.md) · [Week 7: AI 代码审查 →](../week7/README.md) · [术语表](../../../TERMINOLOGY.md)
 
 # Week 6: 安全扫描（Security Scanning）
 
@@ -18,6 +18,15 @@
 
 4-5 小时
 
+## 学习顺序
+
+按以下顺序学习本周内容：
+
+1. **阅读中文导读** → [assignment-zh.md](assignment-zh.md) — 安全概念、Semgrep 使用、常见漏洞
+2. **完成课程练习** → [assignment.md](assignment.md) — 原课程作业（英文）
+3. **记录学习笔记** → [writeup-zh.md](writeup-zh.md) — 结构化笔记模板
+4. **进入下一周** → [Week 7: AI 代码审查](../week7/README.md)
+
 ## 文件索引
 
 | 文件 | 说明 |
@@ -33,4 +42,4 @@
 
 ---
 
-[← Week 5: Warp Agentic 开发](../week5/) · [Week 7: AI 代码审查 →](../week7/)
+[← Week 5: Warp Agentic 开发](../week5/README.md) · [Week 7: AI 代码审查 →](../week7/README.md)

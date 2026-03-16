@@ -170,4 +170,4 @@ Agentic Coding 不只是"让 AI 帮你写代码"，还包括"确保 AI 写的代
 - [ ] 能解释每个修复为什么能消除风险
 - [ ] 理解 SAST、Secrets、SCA 三种扫描类型的区别
 
-[开始 Week 7 →](../week7/)
+[开始 Week 7 →](../week7/README.md)
