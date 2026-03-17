@@ -39,7 +39,7 @@
 | 模块 | 说明 | 状态 |
 |------|------|------|
 | [**Agentic Coding**](modules/agentic-coding/README.md) | 与 AI 协作的软件开发（改编自 Stanford CS146S，10 周） | **进行中** |
-| [App Dev Fundamentals](modules/app-dev-fundamentals/README.md) | 应用开发基础：数据库、API、前后端概念 | 规划中 |
+| [**Application Development**](modules/app-dev-fundamentals/README.md) | 理解软件是怎么运作的（基于 Chicago Booth BUSN 36110 核心思想） | **框架已搭建** |
 | [Getting Started](modules/getting-started/README.md) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
 
 | 其他资源 | 说明 |
@@ -73,11 +73,20 @@
 
 ---
 
-## 模块 2: App Dev Fundamentals（规划中）
+## 模块 2: Application Development
 
-> 应用开发基础：数据库、API、前后端概念。为没有开发背景的领域专家补齐必要的技术基础。
+> 理解软件是怎么运作的。基于 Chicago Booth BUSN 36110 课程核心思想，用螺旋式学习法（Spiral Learning）从零构建对 Web 应用的完整心智模型。
 >
-> → [模块首页](modules/app-dev-fundamentals/README.md)
+> → [**模块首页**](modules/app-dev-fundamentals/README.md)（课程思想、7 个目标、螺旋式学习法）
+
+| 阶段 | 内容 |
+|------|------|
+| Web 基础 | HTTP、API、HTML / CSS |
+| 编程逻辑 | 控制流、面向对象 |
+| 动态应用 | 路由、表单、数据处理 |
+| 数据层 | 关系型数据库、数据关联 |
+| 安全与认证 | Cookie、认证、权限 |
+| 综合实践 | "First of Many" 最终项目 |
 
 ---
 
