@@ -1,4 +1,4 @@
-# Agent-First Dev 智能体编程最重要的事
+# Agent-First Dev 智能体开发最重要的事
 
 > 与 Coding Agent 协作构建生产级应用的最小必要知识。基于 [Stanford CS146S](https://themodernsoftware.dev)（授权）和 Chicago Booth Application Development 课程。
 
