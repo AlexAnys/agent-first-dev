@@ -1,4 +1,4 @@
-# Agent-First Dev
+# Agent-First Dev 智能体编程最重要的事
 
 > 与 Coding Agent 协作构建生产级应用的最小必要知识。基于 [Stanford CS146S](https://themodernsoftware.dev)（授权）和 Chicago Booth Application Development 课程。
 
@@ -10,21 +10,19 @@
 >
 > — Paul Graham, *[How to Get Startup Ideas](http://paulgraham.com/startupideas.html)*（Chicago Booth BUSN 36110 课程开篇引用）
 
-这段话改变了我的认知。
+我是一个非技术背景的 MBA 学生。2025 年秋在 Chicago Booth 修了一门 Application Development 课程，从写第一行代码开始。四个月后，我在用 Coding Agent 从零开发生产级的全栈 SaaS 应用。
 
-我是一个完全非技术背景的 MBA 学生。2025 年秋季在 Chicago Booth 修了一门 Application Development 课程，从写第一行代码开始。四个月后，我在用 Coding Agent 从零开发生产级的全栈 SaaS 应用。
-
-从今年 2 月到现在，我在 GitHub 上收获了 3500+ Star，同时管理着十几个开源项目——全部利用业余时间。这在以前是完全不敢想象的事。在一个满是技术背景的开源社区里，我第一次感到自己走在了时代的前列。
+从今年 2 月到现在，我在 GitHub 上收获了 3500+ Star，利用业余时间同时管理着十多个开源项目。在一个充满技术先驱的社区里，这超出了我以前的想象，第一次感到自己走在了时代的前列。
 
 ## 为什么做这个仓库
 
-**Coding Agent 的能力已经发生质变。** Claude Code、Cursor 等工具可以在相当长的时间里自主完成完整的开发任务，包括生产级应用。但大多数非技术背景的人还卡在 vibe coding 阶段：用 lovable、manus、v0 生成一个 Demo，看起来能跑，实际上线第一天就崩。
+**[25年底以来 Coding Agent 的能力已经发生质变](https://wtfhappened2025.com/)。** Claude Code、Cursor 等工具可以在相当长的时间里自主完成完整的开发任务，包括生产级应用。但大多数非技术背景的人还卡在 vibe coding 阶段：用 lovable、manus、v0 生成一个 Demo，看起来能跑，实际上线第一天就崩。
 
 与此同时，市面上铺天盖地的 AI 工具推荐和教程，噪音远大于信号。
 
 **这个仓库就是我回过头来，把最重要的东西整理出来。**
 
-1. **我走过的弯路和经验教训** — 哪些知识真正有用，哪些是浪费时间
+1. **走过的弯路和经验教训** — 哪些知识真正有用，哪些是浪费时间
 2. **为什么学习有时候是一种"诅咒"** — 并非知识越多越好，过度学习反而让你不敢动手
 3. **最小必要知识** — 从 Stanford 和 Chicago Booth 两门顶级课程中，提取出与 Coding Agent 协作进行全栈开发刚好够用的信息
 
