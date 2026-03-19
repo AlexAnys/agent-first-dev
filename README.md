@@ -130,6 +130,6 @@
 
 本项目采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 协议。
 
-- **BY**（署名）— 使用或改编本内容时，请注明出处并链接到本仓库和[原课程](https://themodernsoftware.dev)
+- **BY**（署名）— 使用或改编本内容时，请注明出处并链接到[本仓库](https://github.com/AlexAnys/agent-first-dev)和[原课程](https://themodernsoftware.dev)
 - **NC**（非商业）— 不得用于商业目的
 - **SA**（相同方式共享）— 改编作品须以相同协议发布
