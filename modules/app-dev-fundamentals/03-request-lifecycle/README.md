@@ -125,6 +125,25 @@ RCAV 是和 AI 协作开发时最实用的"共同语言"之一：
 - **Review AI 生成的代码时按 RCAV 检查**：路由定义了吗？Controller 存在吗？Action 里查了数据库吗？View 模板写了吗？四步都到位了，功能就不会缺失。
 - **调试时按 RCAV 定位**：404 错误？大概率是 Route 的问题。500 错误？看 Action 里的代码。页面出来了但数据不对？看 Action 查询逻辑或 View 渲染逻辑。
 
+## 动手试一试
+
+### 练习 1：在真实网站中追踪 RCAV
+1. 打开任意一个 Web 应用（比如 GitHub）
+2. 点击不同的页面，观察 URL 的变化：
+   - `github.com/AlexAnys` → 这是哪个 Controller 的哪个 Action？（Users#show）
+   - `github.com/AlexAnys/agent-first-dev` → （Repositories#show）
+   - `github.com/AlexAnys/agent-first-dev/issues` → （Issues#index）
+   - `github.com/AlexAnys/agent-first-dev/issues/new` → （Issues#new）
+3. 你会发现所有页面都符合 RCAV 模式——URL 决定了走哪条路由
+
+### 练习 2：用 JSON Placeholder 体验 7 个标准 Action
+打开 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) — 一个免费的模拟 API：
+- **index**（列表）：在浏览器打开 `https://jsonplaceholder.typicode.com/posts` → 看到所有文章
+- **show**（详情）：打开 `https://jsonplaceholder.typicode.com/posts/1` → 看到第 1 篇文章
+- **嵌套资源**：打开 `https://jsonplaceholder.typicode.com/posts/1/comments` → 看到第 1 篇文章的所有评论
+
+注意 URL 的模式：`/资源名` = 列表，`/资源名/id` = 详情。这就是 RCAV 中的 Route 规则。
+
 ## 下一步
 
 → [04: 数据库与 CRUD](../04-databases-and-crud/README.md)

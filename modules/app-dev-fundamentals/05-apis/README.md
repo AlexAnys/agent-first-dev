@@ -59,6 +59,37 @@ JSON 就是一种结构化的文本格式。所有 API 都用它。
 
 Link to Week 3 (MCP 本质上就是标准化的 API 协议) and Week 5 (多代理工作流中代理之间的通信也是 API)
 
+## 动手试一试
+
+### 练习 1：在浏览器里调用 API
+直接在浏览器地址栏输入以下 URL，你就在调用 API 了：
+
+- **查天气数据**：`https://wttr.in/Shanghai?format=j1` → 返回上海天气的 JSON
+- **查 GitHub 用户**：`https://api.github.com/users/AlexAnys` → 返回 GitHub 用户信息
+- **查随机名言**：`https://dummyjson.com/quotes/random` → 返回一条随机名言
+
+观察返回的 JSON 数据，找到你感兴趣的字段。这就是"调用 API"——没什么魔法，就是访问一个 URL，拿回一段结构化数据。
+
+### 练习 2：用 Hoppscotch 发送 POST 请求
+打开 [Hoppscotch](https://hoppscotch.io/) — 一个免费的 API 测试工具（不需要注册）：
+
+1. 把方法改为 **POST**
+2. URL 填入 `https://jsonplaceholder.typicode.com/posts`
+3. 点击 **Body** → 选 **application/json**，填入：
+```json
+{
+  "title": "我的第一个 API 请求",
+  "body": "这是通过 POST 发送的数据",
+  "userId": 1
+}
+```
+4. 点 **Send** → 看返回结果
+
+你刚刚完成了一个 POST 请求——和"提交表单"、"调用 AI API"在技术上完全一样。
+
+### 练习 3：理解 AI API 调用
+以上练习的核心启示：当你的应用"调用 ChatGPT"时，技术上发生的事情和练习 2 一模一样——发一个 POST 请求，body 里放 prompt，拿回 JSON 格式的回复。
+
 ## 下一步
 
 → 06: 认证与安全

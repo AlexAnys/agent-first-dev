@@ -57,6 +57,47 @@ Every feature you can think of maps to one of these four operations.
 
 Link to Agentic Coding Week 2 (全栈开发中会实际操作数据库)
 
+## 动手试一试
+
+### 练习：用在线数据库体验 CRUD
+打开 [SQLiteOnline](https://sqliteonline.com/)，复制粘贴以下 SQL 逐步运行：
+
+**Create（创建）**：
+```sql
+CREATE TABLE notes (
+  id INTEGER PRIMARY KEY,
+  title TEXT,
+  content TEXT,
+  created_at TEXT DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO notes (title, content) VALUES ('学习笔记', '今天学了 CRUD');
+INSERT INTO notes (title, content) VALUES ('读书笔记', '看了《思考，快与慢》');
+```
+
+**Read（读取）**：
+```sql
+-- 查看所有笔记
+SELECT * FROM notes;
+-- 只看标题
+SELECT title FROM notes;
+-- 查找包含"学习"的笔记
+SELECT * FROM notes WHERE title LIKE '%学习%';
+```
+
+**Update（更新）**：
+```sql
+UPDATE notes SET content = '今天学了 CRUD，感觉很有收获' WHERE id = 1;
+SELECT * FROM notes;
+```
+
+**Delete（删除）**：
+```sql
+DELETE FROM notes WHERE id = 2;
+SELECT * FROM notes;
+```
+
+> 跑完这四步，你就亲手体验了所有应用的骨架操作。任何"保存"按钮背后是 Create，任何"列表页"背后是 Read，任何"编辑"按钮背后是 Update，任何"删除"按钮背后是 Delete。
+
 ## 下一步
 
 → 05: API — 一切都是 HTTP 请求
