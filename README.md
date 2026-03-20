@@ -76,18 +76,19 @@
 
 ## 模块 2: Application Development
 
-> 理解软件是怎么运作的。基于 Chicago Booth BUSN 36110 课程核心思想，用螺旋式学习法（Spiral Learning）从零构建对 Web 应用的完整心智模型。
+> 理解软件是怎么运作的。基于 Chicago Booth BUSN 36110 课程核心思想，用螺旋式学习法构建对 Web 应用的完整心智模型。
 >
-> → [**模块首页**](modules/app-dev-fundamentals/README.md)（课程思想、7 个目标、螺旋式学习法）
+> → [**模块首页**](modules/app-dev-fundamentals/README.md)（课程思想、教学理念、与 Agentic Coding 的关系）
 
-| 阶段 | 内容 |
-|------|------|
-| Web 基础 | HTTP、API、HTML / CSS |
-| 编程逻辑 | 控制流、面向对象 |
-| 动态应用 | 路由、表单、数据处理 |
-| 数据层 | 关系型数据库、数据关联 |
-| 安全与认证 | Cookie、认证、权限 |
-| 综合实践 | "First of Many" 最终项目 |
+| 章节 | 主题 | 一句话简介 |
+|------|------|-----------|
+| [01](modules/app-dev-fundamentals/01-how-the-web-works/README.md) | 互联网是怎么工作的 | HTTP 请求与响应，URL 的工作原理 |
+| [02](modules/app-dev-fundamentals/02-data-modeling/README.md) | 数据建模 | 最高杠杆的技能——名词变成表 |
+| [03](modules/app-dev-fundamentals/03-request-lifecycle/README.md) | 请求的生命周期 | RCAV: URL 如何变成你看到的页面 |
+| [04](modules/app-dev-fundamentals/04-databases-and-crud/README.md) | 数据库与 CRUD | 增删改查——所有应用的骨架 |
+| [05](modules/app-dev-fundamentals/05-apis/README.md) | API | "一切都是 HTTP 请求" |
+| [06](modules/app-dev-fundamentals/06-auth-and-security/README.md) | 认证与安全 | 谁是你，你能做什么 |
+| [方法论](modules/app-dev-fundamentals/methodology/README.md) | 教学理念 | 螺旋学习、砍范围、AI 是乘数 |
 
 ---
 
