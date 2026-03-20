@@ -6,7 +6,7 @@
 
 ## 这门课到底教什么？
 
-一句话概括：**Human-agent engineering, not vibe coding.**
+一句话概括：**Human-agent engineering（人机协作工程），not vibe coding.**
 
 "Vibe coding" 这个词最近很火——打开 AI，随便说两句，让它帮你把代码写了。听起来很爽，但现实是：这样写出来的代码你自己都不敢上线。
 
@@ -26,7 +26,7 @@
 | [Week 6](week6/README.md) | 安全扫描（Security Scanning） | AI 辅助的代码安全检查，把漏洞扼杀在开发阶段 |
 | [Week 7](week7/README.md) | AI 代码审查（Code Review） | 人机协作的质量保障，建立可靠的审查流程 |
 | [Week 8](week8/README.md) | 多技术栈应用（Multi-Stack Application） | Vibe Coding 的正确打开方式——有章法、有质量地快速开发 |
-| [Week 9](week9/README.md) | AI 系统监控（Agents Post-Deployment） | 生产环境监控与 AI 辅助事件响应（阅读 + 自学） |
+| [Week 9](week9/README.md) | AI 系统监控与事件响应（Agents Post-Deployment） | 生产环境监控与 AI 辅助事件响应（阅读 + 自学） |
 | [Week 10](week10/README.md) | AI 软件工程的未来（What's Next） | 行业展望与持续学习路径（阅读 + 自学） |
 
 ## 课程的逻辑线
@@ -35,7 +35,7 @@
 
 | 阶段 | 周次 | 你会学到 |
 |------|------|----------|
-| **理解** | Week 1-2 | LLM 的工作原理、提示技术、编码代理的架构。先理解工具，再使用工具。 |
+| **理解** | Week 1-2 | LLM 的工作原理、提示技术、编码代理的架构。在动手构建的过程中理解 LLM 原理和代理架构。 |
 | **构建** | Week 3-5 | MCP 扩展 AI 能力、Claude Code 的代理模式、Warp 多代理协作。从单点工具到系统化工作流。 |
 | **加固** | Week 6-7 | AI 生成代码的安全扫描、人机协作的代码审查。写出来的代码要经得起检验。 |
 | **交付** | Week 8 | 多技术栈全栈应用。把前 7 周的能力综合运用，交付一个完整项目。 |
@@ -49,7 +49,7 @@
 
 **Week 1 → Week 2 → Week 4 → Week 8**
 
-理解提示 → 掌握架构 → 深入代理 → 实战应用。如果你已经有一定的开发经验，想尽快上手 Agentic Coding 的核心技能，走这条路就够了。
+理解提示 → 掌握架构 → 深入代理 → 实战应用。如果你想尽快上手 Agentic Coding 的核心技能，走这条路就够了。
 
 ### 完整路径（10 周）
 
@@ -58,6 +58,8 @@
 ### 深度路径
 
 完整路径 + 每周的扩展阅读和额外练习。适合想深入理解底层原理、未来打算在这个方向深耕的同学。
+
+> 如果遇到不理解的 Web 开发概念（HTTP、数据库、API 等），可以参考 [Application Development 模块](../app-dev-fundamentals/README.md)。
 
 ## 课程嘉宾
 

@@ -4,11 +4,25 @@
 
 回顾 10 周学习旅程，展望 AI 对软件工程行业的深远影响。
 
+## 适合谁
+
+- 完成了前 8 周（或快速路径 Week 1→2→4→8）的学习者
+- 想了解 AI 软件工程行业趋势的人
+
+## 前置条件
+
+- 完成 Week 1-8（至少走完快速路径）
+
+## 预计时间
+
+1-2 小时（浏览讲义 + 回顾 + 自学实践）
+
 ## 课程讲义
 
 | 讲义 | 主题 |
 |------|------|
 | [Mon 讲义](https://themodernsoftware.dev/) | The Future of AI Software Engineering |
+| Fri 嘉宾讲义 | Martin Casado: The Future of AI Software Engineering（讲义未公开） |
 
 > 注：本周讲义链接指向课程网站，暂无 Google Slides 直链。
 
