@@ -12,11 +12,11 @@
 
 我是一个非技术背景的 MBA 学生。2025 年秋在 Chicago Booth 修了一门 Application Development 课程，从写第一行代码开始。四个月后，我在用 Coding Agent 从零开发生产级的全栈 SaaS 应用。
 
-从今年 2 月到现在，我在 GitHub 上收获了 3800+ Star，利用业余时间同时管理着十多个开源项目，这超出了以前的想象。
+从今年 2 月到现在，我在 GitHub 上收获了 3800+ Star，利用业余时间同时管理着二十多个开源项目，这超出了以前的想象。
 
 ## 为什么做这个仓库
 
-**[25年底以来 Coding Agent 的能力已经发生质变](https://wtfhappened2025.com/)。** Claude Code、Cursor 等工具可以在相当长的时间里自主完成完整的开发任务，包括生产级应用。但大多数非技术背景的人还卡在 vibe coding 阶段：用 lovable、manus、v0 生成一个 Demo，看起来能跑，实际上线第一天就崩。
+**[25年底以来 Coding Agent 的能力已经发生质变](https://wtfhappened2025.com/)。** Claude Code、Cursor 等工具可以在相当长的时间里自主完成完整的开发任务，包括生产级应用。但大多数非技术背景的人还卡在 vibe coding（随意让 AI 生成代码，不关心质量和可维护性）阶段：用 lovable、manus、v0 生成一个 Demo，看起来能跑，实际上线第一天就崩。
 
 与此同时，市面上铺天盖地的 AI 工具推荐和教程，噪音远大于信号。
 

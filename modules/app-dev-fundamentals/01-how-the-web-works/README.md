@@ -1,5 +1,7 @@
 > [← 模块首页](../README.md) · [下一章: 数据建模 →](../02-data-modeling/README.md)
 
+> 已经了解 HTTP 请求-响应模型和 URL 结构？可以直接跳到 [02: 数据建模](../02-data-modeling/README.md)。
+
 # 01: 互联网是怎么工作的（HTTP 请求与响应）
 
 > 一句话：你在浏览器输入一个网址，按下回车，发生了什么？
@@ -107,17 +109,17 @@ https://www.example.com/users/123?tab=posts
 不需要安装任何东西，点开就能练：
 
 ### 练习 1：看一个真实的 HTTP 请求
-1. 打开浏览器，按 `F12`（或右键 → 检查）打开开发者工具
+1. 打开浏览器，按 `F12`（Windows/Linux）或 `Cmd+Option+I`（Mac）（或右键 → 检查）打开开发者工具
 2. 切换到 **Network**（网络）标签
 3. 在地址栏输入任意网址（比如 `https://httpbin.org/get`）并回车
 4. 观察 Network 面板里出现的请求：请求方法（GET）、状态码（200）、响应内容（JSON）
 5. 这就是一个完整的 HTTP 请求-响应过程
 
 ### 练习 2：发送不同类型的请求
-打开 [httpbin.org](https://httpbin.org/) — 这是一个专门用来测试 HTTP 请求的免费服务：
-- 点击 `/get` → 看 GET 请求返回什么
-- 点击 `/status/404` → 体验一个 404 状态码
-- 点击 `/status/500` → 体验一个服务器错误
+在浏览器地址栏直接输入以下 URL 并回车：
+- `https://httpbin.org/get` → 看 GET 请求返回的 JSON 数据
+- `https://httpbin.org/status/404` → 体验一个 404 状态码
+- `https://httpbin.org/status/500` → 体验一个服务器错误
 
 ### 练习 3：理解 URL 结构
 观察这个 URL，尝试拆解它的组成部分：

@@ -38,10 +38,10 @@ Cookie 就是浏览器里的一个小文本文件，仅此而已。
 
 ### 安全的基本原则
 
-- 永远不要明文存储密码（用哈希）
+- 永远不要明文存储密码（用哈希（Hash，一种单向加密：能从密码算出一串乱码，但不能从乱码反推出密码））
 - HTTPS = 加密传输（HTTP + 锁）
 - 最小权限原则：只给用户需要的权限
-- 永远不要信任用户输入（SQL 注入、XSS）
+- 永远不要信任用户输入（SQL 注入（通过输入框攻击数据库）、XSS（通过输入框注入恶意代码））
 
 ## 常见误区
 
@@ -51,18 +51,18 @@ Cookie 就是浏览器里的一个小文本文件，仅此而已。
 
 ## 这个概念在 Agentic Coding 中的应用
 
-Link to Week 6 (安全扫描 — 用 AI 检查 AI 生成代码的安全性) — this is exactly why Week 6 exists
+[Agentic Coding Week 6](../../agentic-coding/week6/README.md) (安全扫描 — 用 AI 检查 AI 生成代码的安全性) — this is exactly why Week 6 exists
 
 ## 动手试一试
 
 ### 练习 1：查看你浏览器里的 Cookie
 1. 打开任意你已登录的网站（比如 GitHub）
-2. 按 `F12` 打开开发者工具
+2. 按 `F12`（Windows/Linux）或 `Cmd+Option+I`（Mac）打开开发者工具
 3. 切换到 **Application**（应用）标签（Chrome）或 **Storage**（存储）标签（Firefox）
 4. 在左侧找到 **Cookies** → 点击当前网站域名
 5. 你会看到一堆键值对——这就是 Cookie，服务器用它来"记住你是谁"
 
-尝试删除所有 Cookie，然后刷新页面——你会发现自己被"登出"了。这就是 Session 的工作原理：Cookie 没了，服务器就不认识你了。
+右键点击当前网站域名下的某一条 Cookie，选择删除，然后刷新页面——你会发现自己被"登出"了。这就是 Session 的工作原理：Cookie 没了，服务器就不认识你了。
 
 ### 练习 2：体验 HTTPS 的作用
 1. 打开浏览器，访问 `http://httpbin.org/get`（注意是 **http** 不是 https）
@@ -80,3 +80,7 @@ Link to Week 6 (安全扫描 — 用 AI 检查 AI 生成代码的安全性) — 
 ## 下一步
 
 → 方法论：这门课是怎么教的
+
+---
+
+[← 05: API](../05-apis/README.md) · [方法论 →](../methodology/README.md)

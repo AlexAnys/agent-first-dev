@@ -27,7 +27,7 @@ Every feature you can think of maps to one of these four operations.
 - 表（Table）= 一个 Sheet
 - 行（Row）= 一条记录
 - 列（Column）= 一个字段
-- 每行有唯一 ID（主键）
+- 每行有唯一 ID（主键 / Primary Key，相当于身份证号码，不会重复）
 
 ### 查询 = 提问
 
@@ -55,12 +55,14 @@ Every feature you can think of maps to one of these four operations.
 
 当你描述需求时，用 CRUD 语言："用户可以 Create 新的笔记，Read 自己的笔记列表，Update 笔记内容，Delete 不需要的笔记"。这比"做一个笔记功能"精确得多。
 
-Link to Agentic Coding Week 2 (全栈开发中会实际操作数据库)
+[Agentic Coding Week 2](../../agentic-coding/week2/README.md) (全栈开发中会实际操作数据库)
 
 ## 动手试一试
 
+> 在 02 章你已经用 SQL 建过表。这次的重点不同：我们关注的是 CRUD 四种操作本身——特别是 Update 和 Delete，这是 02 没有涉及的。
+
 ### 练习：用在线数据库体验 CRUD
-打开 [SQLiteOnline](https://sqliteonline.com/)，复制粘贴以下 SQL 逐步运行：
+打开 [SQLiteOnline](https://sqliteonline.com/)，复制粘贴以下 SQL 到左侧编辑器中，点 Run 运行：
 
 **Create（创建）**：
 ```sql
@@ -101,3 +103,7 @@ SELECT * FROM notes;
 ## 下一步
 
 → 05: API — 一切都是 HTTP 请求
+
+---
+
+[← 03: 请求的生命周期](../03-request-lifecycle/README.md) · [05: API →](../05-apis/README.md)
