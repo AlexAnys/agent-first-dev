@@ -28,6 +28,8 @@
 
 我的核心信念：**Learn by Doing**。不是先学完再做，而是在做的过程中，只学当下需要的东西。这个仓库会持续更新，分享我对即时学习（Just-in-Time Learning）、知识必要性、以及什么才是 AI 时代学习方式的思考。
 
+> 📖 **[领域专家 × AI 协作框架](FRAMEWORK.md)** — 这些模块背后的方法论体系。关于如何学习、如何思考、如何与 AI 协作的通用框架。也可以直接作为 AI Agent 的上下文，帮助你更有效地学习任何领域。
+
 ---
 
 ## 模块总览
@@ -42,6 +44,7 @@
 
 | 其他资源 | 说明 |
 |----------|------|
+| [**FRAMEWORK.md**](FRAMEWORK.md) | 领域专家 × AI 协作框架：学习方法论与思维模型（人类参考 + Agent 上下文） |
 | [`guides/`](guides/README.md) | 跨模块实用指南（如何选 AI 工具、如何调试等） |
 | [`resources/`](resources/README.md) | 学习资源汇总：推荐阅读、视频、社区 |
 | [`TERMINOLOGY.md`](TERMINOLOGY.md) | 术语表 |
