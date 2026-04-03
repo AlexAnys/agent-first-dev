@@ -2,6 +2,8 @@
 
 > 与 Coding Agent 协作构建生产级应用的最小必要知识。基于 [Stanford CS146S](https://themodernsoftware.dev)（授权）和 Chicago Booth Application Development 课程。
 
+[![GitHub](https://img.shields.io/badge/主仓库-GitHub-black?style=flat-square&logo=github)](https://github.com/AlexAnys/agent-first-dev)
+
 **目录**: [背景](#背景) · [为什么做这个仓库](#为什么做这个仓库) · [模块总览](#模块总览) · [前置要求](#前置要求) · [如何使用](#如何使用这个知识库) · [授权与致谢](#授权与致谢)
 
 ## 背景
@@ -127,6 +129,12 @@
 - 原课程内容版权归 Mihail Eric 所有
 
 本项目不是单纯的翻译，而是结合作者在 Chicago Booth Application Development 课程中的实践经验（非技术背景，4 个月内用 AI 辅助开发交付 20+ 开源项目），为非 CS 背景的学习者重新组织的自学路径。
+
+---
+
+## 📌 相关资源
+
+- [GitHub 主仓库](https://github.com/AlexAnys/agent-first-dev) — 主要开发与讨论在此进行
 
 ---
 
