@@ -14,7 +14,7 @@
 
 我是一个非技术背景的 MBA 学生。2025 年秋在 Chicago Booth 修了一门 Application Development 课程，从写第一行代码开始。四个月后，我在用 Coding Agent 从零开发生产级的全栈 SaaS 应用。
 
-从今年 2 月到现在，我在 GitHub 上收获了 3800+ Star，利用业余时间同时管理着十多个开源项目，这超出了以前的想象。
+从今年 2 月到现在，我在 GitHub 上收获了 4700+ Star，利用业余时间同时管理着二十多个开源项目，这超出了以前的想象。
 
 ## 为什么做这个仓库
 
@@ -42,7 +42,7 @@
 |------|------|------|
 | [**Agentic Coding**](modules/agentic-coding/README.md) | 与 AI 协作的软件开发（改编自 Stanford CS146S，10 周） | **进行中** |
 | [**Application Development**](modules/app-dev-fundamentals/README.md) | 理解软件是怎么运作的（基于 Chicago Booth BUSN 36110 核心思想） | **框架已搭建** |
-| [Getting Started](modules/getting-started/README.md) | 入门指南：环境搭建、工具选择、第一个项目 | 规划中 |
+| [**Getting Started**](modules/getting-started/README.md) | 从零开始的 30 分钟：环境搭建、工具选择、第一个项目 | **已完成** |
 
 | 其他资源 | 说明 |
 |----------|------|
@@ -69,10 +69,11 @@
 | [Week 6](modules/agentic-coding/week6/README.md) | 安全扫描 | AI 辅助的代码安全检查 |
 | [Week 7](modules/agentic-coding/week7/README.md) | AI 代码审查 | 人机协作的质量保障 |
 | [Week 8](modules/agentic-coding/week8/README.md) | 多技术栈应用 | Vibe Coding 的正确打开方式 |
-| [Week 9](modules/agentic-coding/week9/README.md) | AI 系统监控 | 生产环境监控与事件响应（阅读 + 自学） |
-| [Week 10](modules/agentic-coding/week10/README.md) | AI 软件工程的未来 | 行业展望与持续学习路径（阅读 + 自学） |
+| | **延伸阅读** | |
+| [Week 9](modules/agentic-coding/week9/README.md) | AI 系统监控 | 生产环境监控与事件响应（阅读材料 + 自学实践） |
+| [Week 10](modules/agentic-coding/week10/README.md) | AI 软件工程的未来 | 行业展望与持续学习（阅读材料 + 自学实践） |
 
-**快速路径**: Week 1 → 2 → 4 → 8 · **完整路径**: Week 1-10 · 详见[模块首页](modules/agentic-coding/README.md)
+**快速路径**: Week 1 → 2 → 4 → 8 · **完整路径**: Week 1-8 + 延伸阅读 · 详见[模块首页](modules/agentic-coding/README.md)
 
 ---
 
@@ -94,11 +95,11 @@
 
 ---
 
-## 模块 3: Getting Started（规划中）
+## 模块 3: Getting Started
 
-> 入门指南：环境搭建、工具选择、从零完成第一个项目。
+> 从完全没写过代码，到用 AI 做出一个能跑的网页。30 分钟环境搭建 + 第一个项目。
 >
-> → [模块首页](modules/getting-started/README.md)
+> → [**开始学习**](modules/getting-started/README.md)（选工具、认识终端、第一个项目、发布上线）
 
 ---
 
@@ -111,9 +112,19 @@
 
 ---
 
+## 从哪里开始？
+
+- 🟢 **完全没写过代码** → [Getting Started](modules/getting-started/README.md)（30 分钟搭环境 + 第一个项目）→ [Agentic Coding Week 1](modules/agentic-coding/week1/README.md)
+- 🟡 **用过 ChatGPT / v0 / lovable，但没正式学过开发** → [Agentic Coding Week 1](modules/agentic-coding/week1/README.md) → 快速路径（Week 1→2→4→8）
+- 🔵 **有开发经验，想学 AI 协作** → [Agentic Coding Week 4](modules/agentic-coding/week4/README.md)（直接进 Claude Code）
+
+> 不确定？从 [Getting Started](modules/getting-started/README.md) 开始，30 分钟后你就知道自己在哪个阶段了。
+
+---
+
 ## 如何使用这个知识库
 
-1. **选择模块**：从上方[模块总览](#模块总览)选择感兴趣的主题，或直接点进某一周
+1. **从哪开始**：看上方[从哪里开始](#从哪里开始)的决策树，找到你的起点
 2. **查看模块首页**：每个模块都有独立的 README，包含课程逻辑、学习路径和推荐顺序
 3. **遇到不懂的术语**：查阅 [`TERMINOLOGY.md`（术语表）](TERMINOLOGY.md)
 4. **跳过可以跳过的**：如果某个部分你已经熟悉，直接跳到下一个

@@ -1,6 +1,6 @@
 > [← 模块首页](../README.md) · [← Week 8: 多技术栈应用](../week8/README.md) · [Week 10: AI 软件工程的未来 →](../week10/README.md) · [术语表](../../../TERMINOLOGY.md)
 
-# Week 9: AI 系统监控与事件响应（Agents Post-Deployment）
+# Week 9: AI 系统监控与事件响应（延伸阅读）
 
 软件上线不是终点。本周学习如何用 AI 监控生产系统、自动化事件响应流程。
 
