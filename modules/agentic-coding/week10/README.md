@@ -1,6 +1,6 @@
 > [← 模块首页](../README.md) · [← Week 9: AI 系统监控](../week9/README.md) · [术语表](../../../TERMINOLOGY.md)
 
-# Week 10: AI 软件工程的未来（What's Next）
+# Week 10: AI 软件工程的未来（延伸阅读）
 
 回顾 10 周学习旅程，展望 AI 对软件工程行业的深远影响。
 

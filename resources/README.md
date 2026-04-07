@@ -6,11 +6,13 @@
 
 ---
 
+> **如果你时间有限**，每个主题只看标注 🔥 的资源就够了。其余是推荐和深度阅读。
+
 ## 提示工程与 LLM 基础
 
 | 资源 | 类型 | 关联周次 | 说明 |
 |------|------|----------|------|
-| [Deep Dive into LLMs](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 视频 | Week 1 | Karpathy 的 LLM 深度讲解（约 3.5 小时，建议至少看前 30 分钟） |
+| 🔥 [Deep Dive into LLMs](https://www.youtube.com/watch?v=7xTGNNLPyMI) | 视频 | Week 1 | Karpathy 的 LLM 深度讲解（约 3.5 小时，建议至少看前 30 分钟） |
 | [Prompt Engineering Overview](https://cloud.google.com/discover/what-is-prompt-engineering) | 文章 | Week 1 | Google 的提示工程系统概览 |
 | [Prompt Engineering Guide](https://www.promptingguide.ai/techniques) | 指南 | Week 1 | 系统化的提示工程技术指南 |
 | [AI Prompt Engineering: A Deep Dive](https://www.youtube.com/watch?v=T9aRN5JkmL8) | 视频 | Week 1 | 提示工程深度讲解 |
@@ -25,7 +27,7 @@
 | [Advanced Context Engineering for Coding Agents](https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/ace-fca.md) | 指南 | Week 2 | 高级上下文工程实践指南 |
 | [How OpenAI Uses Codex](https://cdn.openai.com/pdf/6a2631dc-783e-479b-b1a4-af0cfbd38630/how-openai-uses-codex.pdf) | PDF | Week 1 | OpenAI 内部如何使用 Codex 的技术报告 |
 | [How Anthropic Uses Claude Code](https://www-cdn.anthropic.com/58284b19e702b49db9302d5b6f135ad8871e7658.pdf) | PDF | Week 4 | Anthropic 内部如何使用 Claude Code |
-| [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | 文章 | Week 4 | 官方最佳实践指南 |
+| 🔥 [Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices) | 文章 | Week 4 | 官方最佳实践指南 |
 | [Good Context Good Code](https://blog.stockapp.com/good-context-good-code/) | 文章 | Week 4 | StockApp 团队通过上下文管理提升 2.5x 生产力的案例 |
 | [Peeking Under the Hood of Claude Code](https://medium.com/@outsightai/peeking-under-the-hood-of-claude-code-70f5a94a9a62) | 文章 | Week 4 | Claude Code 内部工作原理分析 |
 | [Awesome Claude Agents](https://github.com/vijaythecoder/awesome-claude-agents) | 代码 | Week 4 | Claude Code 代理模式的社区资源集 |
@@ -37,7 +39,7 @@
 
 | 资源 | 类型 | 关联周次 | 说明 |
 |------|------|----------|------|
-| [MCP Introduction](https://stytch.com/blog/model-context-protocol-introduction/) | 文章 | Week 3 | MCP 协议入门：什么是 Model Context Protocol |
+| 🔥 [MCP Introduction](https://stytch.com/blog/model-context-protocol-introduction/) | 文章 | Week 3 | MCP 协议入门：什么是 Model Context Protocol |
 | [APIs Don't Make Good MCP Tools](https://www.reillywood.com/blog/apis-dont-make-good-mcp-tools/) | 文章 | Week 3 | 为什么不能简单地把 API 包装成 MCP 工具 |
 | [MCP Server Examples](https://github.com/modelcontextprotocol/servers) | 代码 | Week 3 | 官方 MCP 服务器示例集 |
 | [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) | 代码 | Week 3 | MCP 的 TypeScript 开发套件 |
@@ -49,7 +51,7 @@
 
 | 资源 | 类型 | 关联周次 | 说明 |
 |------|------|----------|------|
-| [OWASP Top Ten](https://owasp.org/www-project-top-ten/) | 文档 | Week 6 | Web 安全十大风险类型，安全入门必读 |
+| 🔥 [OWASP Top Ten](https://owasp.org/www-project-top-ten/) | 文档 | Week 6 | Web 安全十大风险类型，安全入门必读 |
 | [GitHub Copilot RCE via Prompt Injection](https://embracethered.com/blog/posts/2025/github-copilot-remote-code-execution-via-prompt-injection/) | 文章 | Week 6 | Copilot 被提示注入攻击的真实案例 |
 | [Finding Vulnerabilities with Claude Code &amp; Codex](https://semgrep.dev/blog/2025/finding-vulnerabilities-in-modern-web-apps-using-claude-code-and-openai-codex/) | 文章 | Week 6 | Semgrep 用 AI 在开源项目中发现 46 个真实漏洞 |
 | [SAST vs DAST](https://www.splunk.com/en_us/blog/learn/sast-vs-dast.html) | 文章 | Week 6 | 静态分析与动态分析的对比 |
@@ -59,7 +61,7 @@
 
 | 资源 | 类型 | 关联周次 | 说明 |
 |------|------|----------|------|
-| [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) | 文章 | Week 7 | 为什么代码审查如此重要（经典文章） |
+| 🔥 [Code Reviews: Just Do It](https://blog.codinghorror.com/code-reviews-just-do-it/) | 文章 | Week 7 | 为什么代码审查如此重要（经典文章） |
 | [How to Review Code Effectively](https://github.blog/developer-skills/github/how-to-review-code-effectively-a-github-staff-engineers-philosophy/) | 文章 | Week 7 | GitHub Staff Engineer 的代码审查方法论 |
 | [Lessons from a Million AI Code Reviews](https://www.youtube.com/watch?v=TswQeKftnaw) | 视频 | Week 7 | Graphite CPO 分享 AI 审查经验 |
 | [AI-Assisted Assessment in Modern Code Review](https://arxiv.org/pdf/2405.13565) | 论文 | Week 7 | 学术论文：AI 辅助代码审查的系统评估 |
@@ -70,7 +72,7 @@
 
 | 资源 | 类型 | 关联周次 | 说明 |
 |------|------|----------|------|
-| [Introduction to Site Reliability Engineering](https://sre.google/sre-book/introduction/) | 文档 | Week 9 | Google SRE Book 入门章节 |
+| 🔥 [Introduction to Site Reliability Engineering](https://sre.google/sre-book/introduction/) | 文档 | Week 9 | Google SRE Book 入门章节 |
 | [Observability Basics You Should Know](https://www.splunk.com/en_us/blog/learn/observability.html) | 文章 | Week 9 | 可观测性基础概念 |
 | [Kubernetes Troubleshooting with AI](https://www.resolveai.io/blog/kubernetes-troubleshooting-with-ai) | 文章 | Week 9 | 用 AI 诊断 Kubernetes 问题 |
 | [Your New Autonomous Teammate](https://www.resolveai.io/blog/your-new-autonomous-teammate) | 文章 | Week 9 | Resolve AI 的自主代理理念 |
