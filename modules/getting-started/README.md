@@ -38,9 +38,9 @@
 如果你不想在本地安装任何东西：
 
 1. 打开任意 GitHub 仓库（比如 [github.com/new](https://github.com/new) 创建一个新仓库）
-2. 按键盘上的 `.` 键 → 自动打开浏览器版 VS Code
-3. 或者在仓库页面点击绿色 "Code" 按钮 → "Codespaces" → "Create codespace"
-4. 完全在浏览器里写代码，不需要安装任何东西
+2. 在仓库页面点击绿色 "Code" 按钮 → "Codespaces" → "Create codespace on main"
+3. 等待几十秒，一个完整的开发环境（含终端）会在浏览器里打开
+4. 完全在浏览器里写代码和运行命令，不需要安装任何东西
 
 > **不确定选哪个？** 如果你是第一次接触代码，用 **Cursor**。如果你连软件都不想装，用 **GitHub Codespaces**。
 
@@ -85,12 +85,11 @@
 - 全部写在一个 index.html 文件里
 ```
 
-AI 会帮你生成完整的代码。把代码复制到 `index.html` 文件里。
+AI 会帮你生成完整的代码。点击代码块上方的 "Apply" 按钮让 Cursor 自动写入文件（或手动复制粘贴到 `index.html` 里）。
 
 ### 3.3 预览你的网页
 
-- 在 Cursor 里：右键 `index.html` → "Open with Live Server"（如果有这个选项）
-- 或者直接双击 `index.html` 文件，它会在浏览器里打开
+- 最简单的方式：在文件管理器里直接双击 `index.html` 文件，它会在浏览器里打开
 - 你应该能看到一个漂亮的个人链接页面！
 
 ### 3.4 修改它
@@ -107,7 +106,7 @@ AI 会帮你生成完整的代码。把代码复制到 `index.html` 文件里。
 让全世界都能看到你的页面：
 
 1. 在 GitHub 上创建一个新仓库（[github.com/new](https://github.com/new)），取名 `my-first-page`
-2. 把你的 `index.html` 文件上传到仓库
+2. 在仓库页面点击 "Add file" → "Upload files"，拖入你的 `index.html` 文件
 3. 进入仓库 → Settings → Pages → Source 选 "main" 分支 → Save
 4. 等 1-2 分钟，你的页面就上线了，地址是 `https://你的用户名.github.io/my-first-page`
 
@@ -116,7 +115,7 @@ AI 会帮你生成完整的代码。把代码复制到 `index.html` 文件里。
 ## 常见问题
 
 ### "我需要买 Claude Pro / Cursor Pro 吗？"
-不需要。免费版足够完成所有学习内容。如果你开始大量使用，可以考虑付费，但不是必须。
+Cursor 和 Codespaces 的免费版足够完成所有学习内容。Claude Code 需要 Anthropic API 付费（按用量计费）。如果你用 Cursor 开始学习，免费版完全够用。
 
 ### "学完这个指南需要多久？"
 30 分钟到 1 小时，取决于你是否部署到 GitHub Pages。

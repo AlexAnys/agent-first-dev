@@ -114,19 +114,9 @@
 
 ## 从哪里开始？
 
-```
-你有没有写过代码？
-│
-├── 🟢 完全没写过
-│   → Getting Started（30 分钟环境搭建 + 第一个项目）
-│   → Agentic Coding Week 1（从提示工程开始）
-│
-├── 🟡 用过 ChatGPT / v0 / lovable，但没正式学过开发
-│   → Agentic Coding Week 1 → 快速路径（Week 1→2→4→8）
-│
-└── 🔵 有开发经验，想学 AI 协作
-    → Agentic Coding Week 4（直接进 Claude Code）
-```
+- 🟢 **完全没写过代码** → [Getting Started](modules/getting-started/README.md)（30 分钟搭环境 + 第一个项目）→ [Agentic Coding Week 1](modules/agentic-coding/week1/README.md)
+- 🟡 **用过 ChatGPT / v0 / lovable，但没正式学过开发** → [Agentic Coding Week 1](modules/agentic-coding/week1/README.md) → 快速路径（Week 1→2→4→8）
+- 🔵 **有开发经验，想学 AI 协作** → [Agentic Coding Week 4](modules/agentic-coding/week4/README.md)（直接进 Claude Code）
 
 > 不确定？从 [Getting Started](modules/getting-started/README.md) 开始，30 分钟后你就知道自己在哪个阶段了。
 
